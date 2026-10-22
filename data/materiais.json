@@ -1272,6 +1272,46 @@
   "dimensoes": "2400x1350"
  },
  {
+  "id": "proposta-comercial-i-rad-modelo",
+  "titulo": "Proposta comercial I-RAD (modelo)",
+  "produto": "i-rad",
+  "tipo": "proposta",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/proposta-comercial-i-rad-modelo.jpg",
+  "arquivos": [
+   {
+    "nome": "proposta-comercial-i-rad-modelo.pdf",
+    "caminho": "arquivos/i-rad/proposta-comercial-i-rad-modelo.pdf",
+    "formato": "pdf",
+    "tamanho": 1807778,
+    "capa": "capas/proposta-comercial-i-rad-modelo.jpg"
+   }
+  ],
+  "descricao": "Modelo para editar: trocar NOME DO CLIENTE e a data. A página de ROI traz números de uma rede real como exemplo; ajuste com os dados do cliente.",
+  "paginas": 7
+ },
+ {
+  "id": "proposta-comercial-i-print-modelo",
+  "titulo": "Proposta comercial I-PRINT (modelo)",
+  "produto": "i-print",
+  "tipo": "proposta",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/proposta-comercial-i-print-modelo.jpg",
+  "arquivos": [
+   {
+    "nome": "proposta-comercial-i-print-modelo.pdf",
+    "caminho": "arquivos/i-print/proposta-comercial-i-print-modelo.pdf",
+    "formato": "pdf",
+    "tamanho": 2015759,
+    "capa": "capas/proposta-comercial-i-print-modelo.jpg"
+   }
+  ],
+  "descricao": "Modelo para editar: trocar NOME DO CLIENTE e a data.",
+  "paginas": 8
+ },
+ {
   "id": "carrossel-case-de-140-para-300-exames-de-rm-por-dia",
   "titulo": "Carrossel case: de 140 para 300 exames de RM por dia",
   "produto": "swiftmr",

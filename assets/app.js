@@ -13,8 +13,17 @@
     "claripet-ct": { nome: "ClariPET-CT", cor: "#00C8FF", oculto: true },
     "ms-tecnologia": { nome: "MS Tecnologia", cor: "#9AA8BD" }
   };
+  // categorias do filtro
+  const CATEGORIAS = {
+    "kit": ["Kit comercial", "Kit comercial", ["brochure", "apresentacao", "proposta"]],
+    "post": ["Post", "Posts", ["post"]],
+    "identidade": ["Identidade visual", "Identidade visual", ["identidade"]]
+  };
+  // tipo de cada material
   const TIPOS = {
     "brochure": ["Brochure", "Brochures"],
+    "apresentacao": ["Apresentação comercial", "Apresentações comerciais"],
+    "proposta": ["Proposta comercial", "Propostas comerciais"],
     "post": ["Post", "Posts"],
     "identidade": ["Identidade visual", "Identidade visual"]
   };
@@ -84,7 +93,7 @@
 
   function passa(it, e = estado) {
     if (e.produto !== "todos" && it.produto !== e.produto) return false;
-    if (e.tipo !== "todos" && it.tipo !== e.tipo) return false;
+    if (e.tipo !== "todos" && !CATEGORIAS[e.tipo][2].includes(it.tipo)) return false;
     if (e.idioma !== "todos" && it.idioma !== e.idioma && it.idioma !== "neutro") return false;
     if (e.q) {
       const alvo = norm([it.titulo, prodInfo(it.produto).nome, (TIPOS[it.tipo] || [it.tipo])[0], it.evento, it.descricao, it.legenda].join(" "));
@@ -138,13 +147,13 @@
 
   function render() {
     montarProdutos();
-    montarChips("#tipos", "tipo", TIPOS, "Todos os tipos");
+    montarChips("#tipos", "tipo", CATEGORIAS, "Todos os tipos");
     montarChips("#idiomas", "idioma", IDIOMAS, "Todos os idiomas");
     const lista = itens.filter((i) => passa(i));
     $("#grade").innerHTML = lista.map(card).join("");
     $("#vazio").hidden = lista.length > 0;
     $("#vazio p").textContent = estado.produto !== "todos" && !estado.q
-      ? `Ainda não há ${estado.tipo !== "todos" ? TIPOS[estado.tipo][1].toLowerCase() : "materiais"} de ${prodInfo(estado.produto).nome} por aqui.`
+      ? `Ainda não há ${estado.tipo !== "todos" ? (estado.tipo === "kit" ? "materiais do kit comercial" : CATEGORIAS[estado.tipo][1].toLowerCase()) : "materiais"} de ${prodInfo(estado.produto).nome} por aqui.`
       : estado.idioma !== "pt" && !estado.q
       ? `Ainda não há materiais em ${IDIOMAS[estado.idioma].toLowerCase() === "english" ? "inglês" : "espanhol"} por aqui.`
       : "Nenhum material com esses filtros.";

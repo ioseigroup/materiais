@@ -28,7 +28,7 @@ PDF_COMPRIMIR_ACIMA_MB = 4
 
 PRODUTOS = ["iosei", "swiftmr", "swiftsight", "i-rad", "i-print", "i-ris", "i-pacs",
             "claripi", "clariace", "clarict-ai", "claripet-ct", "ms-tecnologia"]
-TIPOS = ["brochure", "post", "identidade"]  # identidade = logos e manual de marca
+TIPOS = ["brochure", "apresentacao", "proposta", "post", "identidade"]  # kit comercial = brochure, apresentacao, proposta; identidade = logos e manual
 
 IMG = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"}
 VID = {".mp4", ".mov", ".webm", ".m4v"}
