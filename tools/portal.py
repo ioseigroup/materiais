@@ -28,10 +28,9 @@ PDF_COMPRIMIR_ACIMA_MB = 4
 
 PRODUTOS = ["iosei", "swiftmr", "swiftsight", "i-rad", "i-print", "i-ris", "i-pacs",
             "claripi", "clariace", "clarict-ai", "claripet-ct", "ms-tecnologia"]
-TIPOS = ["brochure", "post", "evento", "parceria", "curso", "video", "logo",
-         "apresentacao", "case", "proposta-modelo", "institucional"]
+TIPOS = ["brochure", "post", "identidade"]  # identidade = logos e manual de marca
 
-IMG = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+IMG = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"}
 VID = {".mp4", ".mov", ".webm", ".m4v"}
 
 
@@ -87,6 +86,11 @@ def thumb_pdf(src, dst):
 
 def thumb_img(src, dst):
     from PIL import Image
+    if src.lower().endswith(".svg"):
+        import cairosvg, tempfile
+        tmp = tempfile.mktemp(suffix=".png")
+        cairosvg.svg2png(url=src, write_to=tmp, output_width=1200)
+        src = tmp
     im = Image.open(src)
     size = im.size
     if im.mode in ("RGBA", "LA", "P"):
@@ -156,10 +160,17 @@ def cmd_add(a):
     capa = None
     for k, src in enumerate(a.arquivos):
         ext = os.path.splitext(src)[1].lower()
-        sufixo = f"-{k+1:02d}" if len(a.arquivos) > 1 else ""
-        nome = f"{iid}{sufixo}{ext}"
-        dst = os.path.join(FILES, a.produto, nome)
-        tdst = os.path.join(THUMBS, f"{iid}{sufixo}.jpg")
+        if len(a.arquivos) > 1:
+            # varios arquivos: mantem o nome original (ex.: I-RAD_principal_negativa.png)
+            stem = re.sub(r"[^A-Za-z0-9_.-]+", "-", unicodedata.normalize("NFKD", os.path.splitext(os.path.basename(src))[0]).encode("ascii", "ignore").decode()).strip("-")
+            nome = f"{stem}{ext}"
+            os.makedirs(os.path.join(FILES, a.produto, iid), exist_ok=True)
+            dst = os.path.join(FILES, a.produto, iid, nome)
+            tdst = os.path.join(THUMBS, f"{iid}-{k+1:02d}.jpg")
+        else:
+            nome = f"{iid}{ext}"
+            dst = os.path.join(FILES, a.produto, nome)
+            tdst = os.path.join(THUMBS, f"{iid}.jpg")
         if ext == ".pdf":
             info, _ = thumb_pdf(src, tdst)
             if not a.drive:
@@ -221,6 +232,9 @@ def cmd_remove(a):
                 os.remove(os.path.join(ROOT, p))
     if it.get("capa") and os.path.exists(os.path.join(ROOT, it["capa"])):
         os.remove(os.path.join(ROOT, it["capa"]))
+    pasta = os.path.join(FILES, it["produto"], it["id"])
+    if os.path.isdir(pasta):
+        shutil.rmtree(pasta)
     save([i for i in items if i["id"] != a.id])
     print("Removido:", a.id)
 

@@ -254,3 +254,18 @@ a { color: var(--ciano); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Galeria de identidade visual */
+.galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.galeria__item { display: flex; flex-direction: column; color: var(--navy); border: 1px solid #D9DEE8; border-radius: 4px; overflow: hidden; background: #FFFFFF; }
+.galeria__img { height: 124px; display: flex; align-items: center; justify-content: center; padding: 18px; background: #FFFFFF; }
+.galeria__item--escuro .galeria__img { background: #182145; }
+.galeria__item--foto .galeria__img { padding: 0; background: #E9EDF3; }
+.galeria__img img { max-width: 100%; max-height: 88px; width: auto; height: auto; object-fit: contain; }
+.galeria__item--foto .galeria__img img { max-height: 124px; }
+.galeria__nome { padding: 10px 12px 6px; font-size: .88rem; font-weight: 600; border-top: 1px solid #E4E8F0; }
+.galeria__baixar { display: flex; gap: 6px; padding: 0 12px 12px; flex-wrap: wrap; }
+.galeria__baixar a { display: inline-flex; align-items: center; gap: 5px; font-size: .8rem; font-weight: 600; color: var(--navy); text-decoration: none; border: 1px solid #CDD4E0; border-radius: 3px; padding: 5px 8px; }
+.galeria__baixar a:hover { border-color: var(--ciano); color: #0E7F99; }
+.galeria__baixar svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; }
+.galeria__baixar small { font-weight: 400; color: #5A6785; }

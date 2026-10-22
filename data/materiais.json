@@ -1,5 +1,894 @@
 [
  {
+  "id": "logos-iosei-global-operations",
+  "titulo": "Logos IOSEI Global Operations",
+  "produto": "iosei",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-iosei-global-operations-01.png",
+  "arquivos": [
+   {
+    "nome": "IOSEI_cor.png",
+    "caminho": "arquivos/iosei/logos-iosei-global-operations/IOSEI_cor.png",
+    "formato": "png",
+    "tamanho": 67810,
+    "capa": "capas/logos-iosei-global-operations-01.png"
+   },
+   {
+    "nome": "IOSEI_branca.png",
+    "caminho": "arquivos/iosei/logos-iosei-global-operations/IOSEI_branca.png",
+    "formato": "png",
+    "tamanho": 58229,
+    "capa": "capas/logos-iosei-global-operations-02.png"
+   },
+   {
+    "nome": "IOSEI_mono-branco.png",
+    "caminho": "arquivos/iosei/logos-iosei-global-operations/IOSEI_mono-branco.png",
+    "formato": "png",
+    "tamanho": 56511,
+    "capa": "capas/logos-iosei-global-operations-03.png"
+   },
+   {
+    "nome": "IOSEI_mono-preto.png",
+    "caminho": "arquivos/iosei/logos-iosei-global-operations/IOSEI_mono-preto.png",
+    "formato": "png",
+    "tamanho": 56793,
+    "capa": "capas/logos-iosei-global-operations-04.png"
+   },
+   {
+    "nome": "IOSEI_fundo-branco.jpg",
+    "caminho": "arquivos/iosei/logos-iosei-global-operations/IOSEI_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 163118,
+    "capa": "capas/logos-iosei-global-operations-05.jpg"
+   },
+   {
+    "nome": "IOSEI_fundo-escuro.jpg",
+    "caminho": "arquivos/iosei/logos-iosei-global-operations/IOSEI_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 159920,
+    "capa": "capas/logos-iosei-global-operations-06.jpg"
+   }
+  ],
+  "descricao": "PNG com fundo transparente (cor, branca, monocromática preta e branca) e JPEG com fundo branco e com fundo escuro.",
+  "dimensoes": "2400x1350"
+ },
+ {
+  "id": "logos-swiftmr",
+  "titulo": "Logos SwiftMR",
+  "produto": "swiftmr",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-swiftmr-01.png",
+  "arquivos": [
+   {
+    "nome": "SwiftMR_principal_cor.png",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_cor.png",
+    "formato": "png",
+    "tamanho": 52071,
+    "capa": "capas/logos-swiftmr-01.png"
+   },
+   {
+    "nome": "SwiftMR_principal_mono-branco.png",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_mono-branco.png",
+    "formato": "png",
+    "tamanho": 41010,
+    "capa": "capas/logos-swiftmr-02.png"
+   },
+   {
+    "nome": "SwiftMR_principal_mono-preto.png",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_mono-preto.png",
+    "formato": "png",
+    "tamanho": 49422,
+    "capa": "capas/logos-swiftmr-03.png"
+   },
+   {
+    "nome": "SwiftMR_principal_negativa.png",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_negativa.png",
+    "formato": "png",
+    "tamanho": 46113,
+    "capa": "capas/logos-swiftmr-04.png"
+   },
+   {
+    "nome": "SwiftMR_fundo-branco.jpg",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 92164,
+    "capa": "capas/logos-swiftmr-05.jpg"
+   },
+   {
+    "nome": "SwiftMR_fundo-escuro.jpg",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 90223,
+    "capa": "capas/logos-swiftmr-06.jpg"
+   },
+   {
+    "nome": "SwiftMR_principal_cor.svg",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_cor.svg",
+    "formato": "svg",
+    "tamanho": 1773,
+    "capa": "capas/logos-swiftmr-07.png"
+   },
+   {
+    "nome": "SwiftMR_principal_mono-branco.svg",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 1773,
+    "capa": "capas/logos-swiftmr-08.png"
+   },
+   {
+    "nome": "SwiftMR_principal_mono-preto.svg",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 1773,
+    "capa": "capas/logos-swiftmr-09.png"
+   },
+   {
+    "nome": "SwiftMR_principal_negativa.svg",
+    "caminho": "arquivos/swiftmr/logos-swiftmr/SwiftMR_principal_negativa.svg",
+    "formato": "svg",
+    "tamanho": 1773,
+    "capa": "capas/logos-swiftmr-10.png"
+   }
+  ],
+  "descricao": "Arquivos oficiais da AIRS Medical em SVG e PNG com fundo transparente (cor, negativa, monocromática preta e branca), mais JPEG com fundo branco e escuro.",
+  "dimensoes": "1200x255"
+ },
+ {
+  "id": "logos-i-rad",
+  "titulo": "Logos I-RAD",
+  "produto": "i-rad",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-i-rad-01.png",
+  "arquivos": [
+   {
+    "nome": "I-RAD_estendida_cor.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_estendida_cor.png",
+    "formato": "png",
+    "tamanho": 100802,
+    "capa": "capas/logos-i-rad-01.png"
+   },
+   {
+    "nome": "I-RAD_principal_cor.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_cor.png",
+    "formato": "png",
+    "tamanho": 50700,
+    "capa": "capas/logos-i-rad-02.png"
+   },
+   {
+    "nome": "I-RAD_reduzida_cor.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_reduzida_cor.png",
+    "formato": "png",
+    "tamanho": 20521,
+    "capa": "capas/logos-i-rad-03.png"
+   },
+   {
+    "nome": "I-RAD_avatar.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_avatar.png",
+    "formato": "png",
+    "tamanho": 31648,
+    "capa": "capas/logos-i-rad-04.png"
+   },
+   {
+    "nome": "I-RAD_estendida_negativa.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_estendida_negativa.png",
+    "formato": "png",
+    "tamanho": 93954,
+    "capa": "capas/logos-i-rad-05.png"
+   },
+   {
+    "nome": "I-RAD_principal_mono-branco.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_mono-branco.png",
+    "formato": "png",
+    "tamanho": 37572,
+    "capa": "capas/logos-i-rad-06.png"
+   },
+   {
+    "nome": "I-RAD_principal_mono-navy.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_mono-navy.png",
+    "formato": "png",
+    "tamanho": 49929,
+    "capa": "capas/logos-i-rad-07.png"
+   },
+   {
+    "nome": "I-RAD_principal_mono-preto.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_mono-preto.png",
+    "formato": "png",
+    "tamanho": 45700,
+    "capa": "capas/logos-i-rad-08.png"
+   },
+   {
+    "nome": "I-RAD_principal_negativa.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_negativa.png",
+    "formato": "png",
+    "tamanho": 43033,
+    "capa": "capas/logos-i-rad-09.png"
+   },
+   {
+    "nome": "I-RAD_reduzida_mono-branco.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_reduzida_mono-branco.png",
+    "formato": "png",
+    "tamanho": 15455,
+    "capa": "capas/logos-i-rad-10.png"
+   },
+   {
+    "nome": "I-RAD_reduzida_mono-preto.png",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_reduzida_mono-preto.png",
+    "formato": "png",
+    "tamanho": 18684,
+    "capa": "capas/logos-i-rad-11.png"
+   },
+   {
+    "nome": "I-RAD_fundo-branco.jpg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 87451,
+    "capa": "capas/logos-i-rad-12.jpg"
+   },
+   {
+    "nome": "I-RAD_fundo-escuro.jpg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 87337,
+    "capa": "capas/logos-i-rad-13.jpg"
+   },
+   {
+    "nome": "I-RAD_avatar.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_avatar.svg",
+    "formato": "svg",
+    "tamanho": 2804,
+    "capa": "capas/logos-i-rad-14.png"
+   },
+   {
+    "nome": "I-RAD_estendida_cor.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_estendida_cor.svg",
+    "formato": "svg",
+    "tamanho": 59994,
+    "capa": "capas/logos-i-rad-15.png"
+   },
+   {
+    "nome": "I-RAD_estendida_negativa.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_estendida_negativa.svg",
+    "formato": "svg",
+    "tamanho": 59994,
+    "capa": "capas/logos-i-rad-16.png"
+   },
+   {
+    "nome": "I-RAD_principal_cor.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_cor.svg",
+    "formato": "svg",
+    "tamanho": 11497,
+    "capa": "capas/logos-i-rad-17.png"
+   },
+   {
+    "nome": "I-RAD_principal_mono-branco.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 11497,
+    "capa": "capas/logos-i-rad-18.png"
+   },
+   {
+    "nome": "I-RAD_principal_mono-navy.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_mono-navy.svg",
+    "formato": "svg",
+    "tamanho": 11497,
+    "capa": "capas/logos-i-rad-19.png"
+   },
+   {
+    "nome": "I-RAD_principal_mono-preto.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 11497,
+    "capa": "capas/logos-i-rad-20.png"
+   },
+   {
+    "nome": "I-RAD_principal_negativa.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_principal_negativa.svg",
+    "formato": "svg",
+    "tamanho": 11497,
+    "capa": "capas/logos-i-rad-21.png"
+   },
+   {
+    "nome": "I-RAD_reduzida_cor.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_reduzida_cor.svg",
+    "formato": "svg",
+    "tamanho": 1022,
+    "capa": "capas/logos-i-rad-22.png"
+   },
+   {
+    "nome": "I-RAD_reduzida_mono-branco.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_reduzida_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 1022,
+    "capa": "capas/logos-i-rad-23.png"
+   },
+   {
+    "nome": "I-RAD_reduzida_mono-preto.svg",
+    "caminho": "arquivos/i-rad/logos-i-rad/I-RAD_reduzida_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 1022,
+    "capa": "capas/logos-i-rad-24.png"
+   }
+  ],
+  "descricao": "Principal, estendida, reduzida e avatar. SVG vetorial, PNG com fundo transparente (cor, negativa, monocromática preta, branca e navy) e JPEG com fundo branco e escuro.",
+  "dimensoes": "1200x288"
+ },
+ {
+  "id": "logos-i-print",
+  "titulo": "Logos I-PRINT",
+  "produto": "i-print",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-i-print-01.png",
+  "arquivos": [
+   {
+    "nome": "I-PRINT_principal_cor.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_cor.png",
+    "formato": "png",
+    "tamanho": 35593,
+    "capa": "capas/logos-i-print-01.png"
+   },
+   {
+    "nome": "I-PRINT_reduzida_cor.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_reduzida_cor.png",
+    "formato": "png",
+    "tamanho": 11793,
+    "capa": "capas/logos-i-print-02.png"
+   },
+   {
+    "nome": "I-PRINT_avatar.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_avatar.png",
+    "formato": "png",
+    "tamanho": 25984,
+    "capa": "capas/logos-i-print-03.png"
+   },
+   {
+    "nome": "I-PRINT_principal_mono-branco.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_mono-branco.png",
+    "formato": "png",
+    "tamanho": 26645,
+    "capa": "capas/logos-i-print-04.png"
+   },
+   {
+    "nome": "I-PRINT_principal_mono-navy.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_mono-navy.png",
+    "formato": "png",
+    "tamanho": 35088,
+    "capa": "capas/logos-i-print-05.png"
+   },
+   {
+    "nome": "I-PRINT_principal_mono-preto.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_mono-preto.png",
+    "formato": "png",
+    "tamanho": 32182,
+    "capa": "capas/logos-i-print-06.png"
+   },
+   {
+    "nome": "I-PRINT_principal_negativa.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_negativa.png",
+    "formato": "png",
+    "tamanho": 31557,
+    "capa": "capas/logos-i-print-07.png"
+   },
+   {
+    "nome": "I-PRINT_reduzida_mono-branco.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_reduzida_mono-branco.png",
+    "formato": "png",
+    "tamanho": 9116,
+    "capa": "capas/logos-i-print-08.png"
+   },
+   {
+    "nome": "I-PRINT_reduzida_mono-preto.png",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_reduzida_mono-preto.png",
+    "formato": "png",
+    "tamanho": 10878,
+    "capa": "capas/logos-i-print-09.png"
+   },
+   {
+    "nome": "I-PRINT_fundo-branco.jpg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 80720,
+    "capa": "capas/logos-i-print-10.jpg"
+   },
+   {
+    "nome": "I-PRINT_fundo-escuro.jpg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 80452,
+    "capa": "capas/logos-i-print-11.jpg"
+   },
+   {
+    "nome": "I-PRINT_avatar.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_avatar.svg",
+    "formato": "svg",
+    "tamanho": 3011,
+    "capa": "capas/logos-i-print-12.png"
+   },
+   {
+    "nome": "I-PRINT_principal_cor.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_cor.svg",
+    "formato": "svg",
+    "tamanho": 12486,
+    "capa": "capas/logos-i-print-13.png"
+   },
+   {
+    "nome": "I-PRINT_principal_mono-branco.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 12486,
+    "capa": "capas/logos-i-print-14.png"
+   },
+   {
+    "nome": "I-PRINT_principal_mono-navy.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_mono-navy.svg",
+    "formato": "svg",
+    "tamanho": 12486,
+    "capa": "capas/logos-i-print-15.png"
+   },
+   {
+    "nome": "I-PRINT_principal_mono-preto.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 12486,
+    "capa": "capas/logos-i-print-16.png"
+   },
+   {
+    "nome": "I-PRINT_principal_negativa.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_principal_negativa.svg",
+    "formato": "svg",
+    "tamanho": 12486,
+    "capa": "capas/logos-i-print-17.png"
+   },
+   {
+    "nome": "I-PRINT_reduzida_cor.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_reduzida_cor.svg",
+    "formato": "svg",
+    "tamanho": 1074,
+    "capa": "capas/logos-i-print-18.png"
+   },
+   {
+    "nome": "I-PRINT_reduzida_mono-branco.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_reduzida_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 1074,
+    "capa": "capas/logos-i-print-19.png"
+   },
+   {
+    "nome": "I-PRINT_reduzida_mono-preto.svg",
+    "caminho": "arquivos/i-print/logos-i-print/I-PRINT_reduzida_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 1074,
+    "capa": "capas/logos-i-print-20.png"
+   }
+  ],
+  "descricao": "Principal, reduzida e avatar. SVG vetorial, PNG com fundo transparente (cor, negativa, monocromática preta, branca e navy) e JPEG com fundo branco e escuro.",
+  "dimensoes": "1200x219"
+ },
+ {
+  "id": "logos-i-ris",
+  "titulo": "Logos I-RIS",
+  "produto": "i-ris",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-i-ris-01.png",
+  "arquivos": [
+   {
+    "nome": "I-RIS_completa_cor.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_completa_cor.png",
+    "formato": "png",
+    "tamanho": 147845,
+    "capa": "capas/logos-i-ris-01.png"
+   },
+   {
+    "nome": "I-RIS_estendida_cor.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_estendida_cor.png",
+    "formato": "png",
+    "tamanho": 110035,
+    "capa": "capas/logos-i-ris-02.png"
+   },
+   {
+    "nome": "I-RIS_principal_cor.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_cor.png",
+    "formato": "png",
+    "tamanho": 58268,
+    "capa": "capas/logos-i-ris-03.png"
+   },
+   {
+    "nome": "I-RIS_reduzida_cor.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_reduzida_cor.png",
+    "formato": "png",
+    "tamanho": 21600,
+    "capa": "capas/logos-i-ris-04.png"
+   },
+   {
+    "nome": "I-RIS_slogan_cor.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_slogan_cor.png",
+    "formato": "png",
+    "tamanho": 96890,
+    "capa": "capas/logos-i-ris-05.png"
+   },
+   {
+    "nome": "I-RIS_avatar.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_avatar.png",
+    "formato": "png",
+    "tamanho": 32737,
+    "capa": "capas/logos-i-ris-06.png"
+   },
+   {
+    "nome": "I-RIS_completa_negativa.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_completa_negativa.png",
+    "formato": "png",
+    "tamanho": 130088,
+    "capa": "capas/logos-i-ris-07.png"
+   },
+   {
+    "nome": "I-RIS_principal_mono-branco.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_mono-branco.png",
+    "formato": "png",
+    "tamanho": 43139,
+    "capa": "capas/logos-i-ris-08.png"
+   },
+   {
+    "nome": "I-RIS_principal_mono-navy.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_mono-navy.png",
+    "formato": "png",
+    "tamanho": 57541,
+    "capa": "capas/logos-i-ris-09.png"
+   },
+   {
+    "nome": "I-RIS_principal_mono-preto.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_mono-preto.png",
+    "formato": "png",
+    "tamanho": 52588,
+    "capa": "capas/logos-i-ris-10.png"
+   },
+   {
+    "nome": "I-RIS_principal_negativa.png",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_negativa.png",
+    "formato": "png",
+    "tamanho": 51908,
+    "capa": "capas/logos-i-ris-11.png"
+   },
+   {
+    "nome": "I-RIS_fundo-branco.jpg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 88191,
+    "capa": "capas/logos-i-ris-12.jpg"
+   },
+   {
+    "nome": "I-RIS_fundo-escuro.jpg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 87982,
+    "capa": "capas/logos-i-ris-13.jpg"
+   },
+   {
+    "nome": "I-RIS_avatar.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_avatar.svg",
+    "formato": "svg",
+    "tamanho": 3449,
+    "capa": "capas/logos-i-ris-14.png"
+   },
+   {
+    "nome": "I-RIS_completa_cor.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_completa_cor.svg",
+    "formato": "svg",
+    "tamanho": 80964,
+    "capa": "capas/logos-i-ris-15.png"
+   },
+   {
+    "nome": "I-RIS_completa_negativa.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_completa_negativa.svg",
+    "formato": "svg",
+    "tamanho": 80964,
+    "capa": "capas/logos-i-ris-16.png"
+   },
+   {
+    "nome": "I-RIS_estendida_cor.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_estendida_cor.svg",
+    "formato": "svg",
+    "tamanho": 60491,
+    "capa": "capas/logos-i-ris-17.png"
+   },
+   {
+    "nome": "I-RIS_principal_cor.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_cor.svg",
+    "formato": "svg",
+    "tamanho": 15262,
+    "capa": "capas/logos-i-ris-18.png"
+   },
+   {
+    "nome": "I-RIS_principal_mono-branco.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 15262,
+    "capa": "capas/logos-i-ris-19.png"
+   },
+   {
+    "nome": "I-RIS_principal_mono-navy.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_mono-navy.svg",
+    "formato": "svg",
+    "tamanho": 15262,
+    "capa": "capas/logos-i-ris-20.png"
+   },
+   {
+    "nome": "I-RIS_principal_mono-preto.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 15262,
+    "capa": "capas/logos-i-ris-21.png"
+   },
+   {
+    "nome": "I-RIS_principal_negativa.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_principal_negativa.svg",
+    "formato": "svg",
+    "tamanho": 15262,
+    "capa": "capas/logos-i-ris-22.png"
+   },
+   {
+    "nome": "I-RIS_reduzida_cor.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_reduzida_cor.svg",
+    "formato": "svg",
+    "tamanho": 1472,
+    "capa": "capas/logos-i-ris-23.png"
+   },
+   {
+    "nome": "I-RIS_slogan_cor.svg",
+    "caminho": "arquivos/i-ris/logos-i-ris/I-RIS_slogan_cor.svg",
+    "formato": "svg",
+    "tamanho": 30377,
+    "capa": "capas/logos-i-ris-24.png"
+   }
+  ],
+  "descricao": "Principal, estendida, com slogan, completa, reduzida e avatar. SVG vetorial, PNG com fundo transparente e JPEG com fundo branco e escuro.",
+  "dimensoes": "1200x395"
+ },
+ {
+  "id": "logos-i-pacs",
+  "titulo": "Logos I-PACS",
+  "produto": "i-pacs",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-i-pacs-01.png",
+  "arquivos": [
+   {
+    "nome": "I-PACS_completa_cor.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_completa_cor.png",
+    "formato": "png",
+    "tamanho": 150008,
+    "capa": "capas/logos-i-pacs-01.png"
+   },
+   {
+    "nome": "I-PACS_estendida_cor.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_estendida_cor.png",
+    "formato": "png",
+    "tamanho": 112941,
+    "capa": "capas/logos-i-pacs-02.png"
+   },
+   {
+    "nome": "I-PACS_principal_cor.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_cor.png",
+    "formato": "png",
+    "tamanho": 63725,
+    "capa": "capas/logos-i-pacs-03.png"
+   },
+   {
+    "nome": "I-PACS_reduzida_cor.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_reduzida_cor.png",
+    "formato": "png",
+    "tamanho": 26319,
+    "capa": "capas/logos-i-pacs-04.png"
+   },
+   {
+    "nome": "I-PACS_slogan_cor.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_slogan_cor.png",
+    "formato": "png",
+    "tamanho": 102568,
+    "capa": "capas/logos-i-pacs-05.png"
+   },
+   {
+    "nome": "I-PACS_avatar.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_avatar.png",
+    "formato": "png",
+    "tamanho": 37161,
+    "capa": "capas/logos-i-pacs-06.png"
+   },
+   {
+    "nome": "I-PACS_completa_negativa.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_completa_negativa.png",
+    "formato": "png",
+    "tamanho": 127907,
+    "capa": "capas/logos-i-pacs-07.png"
+   },
+   {
+    "nome": "I-PACS_principal_mono-branco.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_mono-branco.png",
+    "formato": "png",
+    "tamanho": 46741,
+    "capa": "capas/logos-i-pacs-08.png"
+   },
+   {
+    "nome": "I-PACS_principal_mono-navy.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_mono-navy.png",
+    "formato": "png",
+    "tamanho": 62832,
+    "capa": "capas/logos-i-pacs-09.png"
+   },
+   {
+    "nome": "I-PACS_principal_mono-preto.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_mono-preto.png",
+    "formato": "png",
+    "tamanho": 57050,
+    "capa": "capas/logos-i-pacs-10.png"
+   },
+   {
+    "nome": "I-PACS_principal_negativa.png",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_negativa.png",
+    "formato": "png",
+    "tamanho": 53623,
+    "capa": "capas/logos-i-pacs-11.png"
+   },
+   {
+    "nome": "I-PACS_fundo-branco.jpg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 90869,
+    "capa": "capas/logos-i-pacs-12.jpg"
+   },
+   {
+    "nome": "I-PACS_fundo-escuro.jpg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 90541,
+    "capa": "capas/logos-i-pacs-13.jpg"
+   },
+   {
+    "nome": "I-PACS_avatar.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_avatar.svg",
+    "formato": "svg",
+    "tamanho": 6135,
+    "capa": "capas/logos-i-pacs-14.png"
+   },
+   {
+    "nome": "I-PACS_completa_cor.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_completa_cor.svg",
+    "formato": "svg",
+    "tamanho": 98979,
+    "capa": "capas/logos-i-pacs-15.png"
+   },
+   {
+    "nome": "I-PACS_completa_negativa.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_completa_negativa.svg",
+    "formato": "svg",
+    "tamanho": 98979,
+    "capa": "capas/logos-i-pacs-16.png"
+   },
+   {
+    "nome": "I-PACS_estendida_cor.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_estendida_cor.svg",
+    "formato": "svg",
+    "tamanho": 70621,
+    "capa": "capas/logos-i-pacs-17.png"
+   },
+   {
+    "nome": "I-PACS_principal_cor.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_cor.svg",
+    "formato": "svg",
+    "tamanho": 13802,
+    "capa": "capas/logos-i-pacs-18.png"
+   },
+   {
+    "nome": "I-PACS_principal_mono-branco.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 13802,
+    "capa": "capas/logos-i-pacs-19.png"
+   },
+   {
+    "nome": "I-PACS_principal_mono-navy.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_mono-navy.svg",
+    "formato": "svg",
+    "tamanho": 13802,
+    "capa": "capas/logos-i-pacs-20.png"
+   },
+   {
+    "nome": "I-PACS_principal_mono-preto.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 13802,
+    "capa": "capas/logos-i-pacs-21.png"
+   },
+   {
+    "nome": "I-PACS_principal_negativa.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_principal_negativa.svg",
+    "formato": "svg",
+    "tamanho": 13802,
+    "capa": "capas/logos-i-pacs-22.png"
+   },
+   {
+    "nome": "I-PACS_reduzida_cor.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_reduzida_cor.svg",
+    "formato": "svg",
+    "tamanho": 2192,
+    "capa": "capas/logos-i-pacs-23.png"
+   },
+   {
+    "nome": "I-PACS_slogan_cor.svg",
+    "caminho": "arquivos/i-pacs/logos-i-pacs/I-PACS_slogan_cor.svg",
+    "formato": "svg",
+    "tamanho": 34787,
+    "capa": "capas/logos-i-pacs-24.png"
+   }
+  ],
+  "descricao": "Principal, estendida, com slogan, completa, reduzida e avatar. SVG vetorial, PNG com fundo transparente e JPEG com fundo branco e escuro.",
+  "dimensoes": "1200x308"
+ },
+ {
+  "id": "logos-claripi",
+  "titulo": "Logos ClariPI",
+  "produto": "claripi",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-claripi-01.png",
+  "arquivos": [
+   {
+    "nome": "ClariPI_cor.png",
+    "caminho": "arquivos/claripi/logos-claripi/ClariPI_cor.png",
+    "formato": "png",
+    "tamanho": 106684,
+    "capa": "capas/logos-claripi-01.png"
+   },
+   {
+    "nome": "ClariPI_branca.png",
+    "caminho": "arquivos/claripi/logos-claripi/ClariPI_branca.png",
+    "formato": "png",
+    "tamanho": 104233,
+    "capa": "capas/logos-claripi-02.png"
+   },
+   {
+    "nome": "ClariPI_mono-branco.png",
+    "caminho": "arquivos/claripi/logos-claripi/ClariPI_mono-branco.png",
+    "formato": "png",
+    "tamanho": 75935,
+    "capa": "capas/logos-claripi-03.png"
+   },
+   {
+    "nome": "ClariPI_mono-preto.png",
+    "caminho": "arquivos/claripi/logos-claripi/ClariPI_mono-preto.png",
+    "formato": "png",
+    "tamanho": 75929,
+    "capa": "capas/logos-claripi-04.png"
+   },
+   {
+    "nome": "ClariPI_fundo-branco.jpg",
+    "caminho": "arquivos/claripi/logos-claripi/ClariPI_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 90627,
+    "capa": "capas/logos-claripi-05.jpg"
+   },
+   {
+    "nome": "ClariPI_fundo-escuro.jpg",
+    "caminho": "arquivos/claripi/logos-claripi/ClariPI_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 91894,
+    "capa": "capas/logos-claripi-06.jpg"
+   }
+  ],
+  "descricao": "Somente o Clariπ, sem bandeiras. PNG com fundo transparente (cor, branca, monocromática preta e branca) e JPEG com fundo branco e escuro.",
+  "dimensoes": "2400x1350"
+ },
+ {
   "id": "carrossel-case-de-140-para-300-exames-de-rm-por-dia",
   "titulo": "Carrossel case: de 140 para 300 exames de RM por dia",
   "produto": "swiftmr",
@@ -9,64 +898,64 @@
   "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-01.jpg",
   "arquivos": [
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-01.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-01.jpg",
+    "nome": "case-crd-pt-01.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-01.jpg",
     "formato": "jpg",
     "tamanho": 204220,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-01.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-02.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-02.jpg",
+    "nome": "case-crd-pt-02.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-02.jpg",
     "formato": "jpg",
     "tamanho": 176000,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-02.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-03.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-03.jpg",
+    "nome": "case-crd-pt-03.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-03.jpg",
     "formato": "jpg",
     "tamanho": 195577,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-03.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-04.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-04.jpg",
+    "nome": "case-crd-pt-04.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-04.jpg",
     "formato": "jpg",
     "tamanho": 190243,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-04.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-05.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-05.jpg",
+    "nome": "case-crd-pt-05.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-05.jpg",
     "formato": "jpg",
     "tamanho": 195107,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-05.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-06.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-06.jpg",
+    "nome": "case-crd-pt-06.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-06.jpg",
     "formato": "jpg",
     "tamanho": 227261,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-06.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-07.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-07.jpg",
+    "nome": "case-crd-pt-07.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-07.jpg",
     "formato": "jpg",
     "tamanho": 191005,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-07.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-08.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-08.jpg",
+    "nome": "case-crd-pt-08-irad.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-08-irad.jpg",
     "formato": "jpg",
     "tamanho": 196944,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-08.jpg"
    },
    {
-    "nome": "carrossel-case-de-140-para-300-exames-de-rm-por-dia-09.jpg",
-    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia-09.jpg",
+    "nome": "case-crd-pt-08.jpg",
+    "caminho": "arquivos/swiftmr/carrossel-case-de-140-para-300-exames-de-rm-por-dia/case-crd-pt-08.jpg",
     "formato": "jpg",
     "tamanho": 200978,
     "capa": "capas/carrossel-case-de-140-para-300-exames-de-rm-por-dia-09.jpg"
@@ -85,57 +974,57 @@
   "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-01.jpg",
   "arquivos": [
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-01.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-01.jpg",
+    "nome": "caso-swiftmr-irad-es-01.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-01.jpg",
     "formato": "jpg",
     "tamanho": 203435,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-01.jpg"
    },
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-02.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-02.jpg",
+    "nome": "caso-swiftmr-irad-es-02.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-02.jpg",
     "formato": "jpg",
     "tamanho": 169991,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-02.jpg"
    },
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-03.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-03.jpg",
+    "nome": "caso-swiftmr-irad-es-03.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-03.jpg",
     "formato": "jpg",
     "tamanho": 188692,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-03.jpg"
    },
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-04.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-04.jpg",
+    "nome": "caso-swiftmr-irad-es-04.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-04.jpg",
     "formato": "jpg",
     "tamanho": 200851,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-04.jpg"
    },
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-05.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-05.jpg",
+    "nome": "caso-swiftmr-irad-es-05.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-05.jpg",
     "formato": "jpg",
     "tamanho": 201055,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-05.jpg"
    },
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-06.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-06.jpg",
+    "nome": "caso-swiftmr-irad-es-06.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-06.jpg",
     "formato": "jpg",
     "tamanho": 223716,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-06.jpg"
    },
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-07.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-07.jpg",
+    "nome": "caso-swiftmr-irad-es-07.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-07.jpg",
     "formato": "jpg",
     "tamanho": 195363,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-07.jpg"
    },
    {
-    "nome": "carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-08.jpg",
-    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-08.jpg",
+    "nome": "caso-swiftmr-irad-es-08.jpg",
+    "caminho": "arquivos/swiftmr/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia/caso-swiftmr-irad-es-08.jpg",
     "formato": "jpg",
     "tamanho": 197401,
     "capa": "capas/carrusel-caso-de-140-a-300-estudios-de-rm-al-dia-08.jpg"
@@ -148,21 +1037,21 @@
   "id": "desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr",
   "titulo": "Desconto IOSEI nos cursos de Gestão de Clínicas do CBR",
   "produto": "iosei",
-  "tipo": "curso",
+  "tipo": "post",
   "idioma": "pt",
   "data": "2026-10-10",
   "capa": "capas/desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr-01.jpg",
   "arquivos": [
    {
-    "nome": "desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr-01.jpg",
-    "caminho": "arquivos/iosei/desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr-01.jpg",
+    "nome": "hero-cbr-iosei.jpg",
+    "caminho": "arquivos/iosei/desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr/hero-cbr-iosei.jpg",
     "formato": "jpg",
     "tamanho": 119731,
     "capa": "capas/desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr-01.jpg"
    },
    {
-    "nome": "desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr-02.png",
-    "caminho": "arquivos/iosei/desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr-02.png",
+    "nome": "logos-iosei-cbr-abcdi.png",
+    "caminho": "arquivos/iosei/desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr/logos-iosei-cbr-abcdi.png",
     "formato": "png",
     "tamanho": 36079,
     "capa": "capas/desconto-iosei-nos-cursos-de-gestao-de-clinicas-do-cbr-02.jpg"
@@ -171,33 +1060,6 @@
   "evento": "CBR Gestão de Clínicas 2026",
   "descricao": "Imagem de divulgação e assinatura de logos IOSEI, CBR e ABCDI",
   "dimensoes": "730x72"
- },
- {
-  "id": "logo-iosei-global-operations",
-  "titulo": "Logo IOSEI Global Operations",
-  "produto": "iosei",
-  "tipo": "logo",
-  "idioma": "pt",
-  "data": "2026-08-25",
-  "capa": "capas/logo-iosei-global-operations-01.png",
-  "arquivos": [
-   {
-    "nome": "logo-iosei-global-operations-01.png",
-    "caminho": "arquivos/iosei/logo-iosei-global-operations-01.png",
-    "formato": "png",
-    "tamanho": 71263,
-    "capa": "capas/logo-iosei-global-operations-01.png"
-   },
-   {
-    "nome": "logo-iosei-global-operations-02.png",
-    "caminho": "arquivos/iosei/logo-iosei-global-operations-02.png",
-    "formato": "png",
-    "tamanho": 64433,
-    "capa": "capas/logo-iosei-global-operations-02.png"
-   }
-  ],
-  "descricao": "Versão azul para fundos claros e versão branca para fundos escuros",
-  "dimensoes": "1762x540"
  },
  {
   "id": "brochure-swiftsight-brain",
@@ -277,33 +1139,6 @@
   "paginas": 10
  },
  {
-  "id": "logo-i-rad",
-  "titulo": "Logo I-RAD",
-  "produto": "i-rad",
-  "tipo": "logo",
-  "idioma": "pt",
-  "data": "2026-07-28",
-  "capa": "capas/logo-i-rad-01.png",
-  "arquivos": [
-   {
-    "nome": "logo-i-rad-01.png",
-    "caminho": "arquivos/i-rad/logo-i-rad-01.png",
-    "formato": "png",
-    "tamanho": 65777,
-    "capa": "capas/logo-i-rad-01.png"
-   },
-   {
-    "nome": "logo-i-rad-02.png",
-    "caminho": "arquivos/i-rad/logo-i-rad-02.png",
-    "formato": "png",
-    "tamanho": 63548,
-    "capa": "capas/logo-i-rad-02.png"
-   }
-  ],
-  "descricao": "Versão original e versão monocromática",
-  "dimensoes": "2979x525"
- },
- {
   "id": "brochure-i-print-on-demand",
   "titulo": "Brochure I-PRINT On Demand",
   "produto": "i-print",
@@ -323,33 +1158,6 @@
   "paginas": 5
  },
  {
-  "id": "logo-i-print",
-  "titulo": "Logo I-PRINT",
-  "produto": "i-print",
-  "tipo": "logo",
-  "idioma": "pt",
-  "data": "2026-07-28",
-  "capa": "capas/logo-i-print-01.png",
-  "arquivos": [
-   {
-    "nome": "logo-i-print-01.png",
-    "caminho": "arquivos/i-print/logo-i-print-01.png",
-    "formato": "png",
-    "tamanho": 21664,
-    "capa": "capas/logo-i-print-01.png"
-   },
-   {
-    "nome": "logo-i-print-02.png",
-    "caminho": "arquivos/i-print/logo-i-print-02.png",
-    "formato": "png",
-    "tamanho": 20330,
-    "capa": "capas/logo-i-print-02.png"
-   }
-  ],
-  "descricao": "Versão azul para fundos claros e versão branca para fundos escuros",
-  "dimensoes": "3055x381"
- },
- {
   "id": "brochure-claripi-clariace-clarict-ai-e-claripet-ct",
   "titulo": "Brochure ClariPI: ClariACE, ClariCT.AI e ClariPET-CT",
   "produto": "claripi",
@@ -367,33 +1175,6 @@
    }
   ],
   "paginas": 10
- },
- {
-  "id": "logo-claripi",
-  "titulo": "Logo ClariPI",
-  "produto": "claripi",
-  "tipo": "logo",
-  "idioma": "pt",
-  "data": "2026-07-28",
-  "capa": "capas/logo-claripi-01.png",
-  "arquivos": [
-   {
-    "nome": "logo-claripi-01.png",
-    "caminho": "arquivos/claripi/logo-claripi-01.png",
-    "formato": "png",
-    "tamanho": 38450,
-    "capa": "capas/logo-claripi-01.png"
-   },
-   {
-    "nome": "logo-claripi-02.png",
-    "caminho": "arquivos/claripi/logo-claripi-02.png",
-    "formato": "png",
-    "tamanho": 37842,
-    "capa": "capas/logo-claripi-02.png"
-   }
-  ],
-  "descricao": "Versão colorida para fundos claros e versão branca para fundos escuros",
-  "dimensoes": "3042x782"
  },
  {
   "id": "brochure-outsourcing-para-radiologia",

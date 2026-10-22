@@ -5,29 +5,21 @@
     "swiftsight": { nome: "SwiftSight", cor: "#7AA7FF" },
     "i-rad": { nome: "I-RAD", cor: "#5FD3E8" },
     "i-print": { nome: "I-PRINT", cor: "#AEB8C6" },
-    "i-ris": { nome: "I-RIS", cor: "#5FD3E8" },
-    "i-pacs": { nome: "I-PACS", cor: "#5FD3E8" },
+    "i-ris": { nome: "I-RIS", cor: "#5C86E0" },
+    "i-pacs": { nome: "I-PACS", cor: "#2FA3B8" },
     "claripi": { nome: "ClariPI", cor: "#00C8FF" },
-    "clariace": { nome: "ClariACE", cor: "#00C8FF" },
-    "clarict-ai": { nome: "ClariCT.AI", cor: "#00C8FF" },
-    "claripet-ct": { nome: "ClariPET-CT", cor: "#00C8FF" },
+    "clariace": { nome: "ClariACE", cor: "#00C8FF", oculto: true },
+    "clarict-ai": { nome: "ClariCT.AI", cor: "#00C8FF", oculto: true },
+    "claripet-ct": { nome: "ClariPET-CT", cor: "#00C8FF", oculto: true },
     "ms-tecnologia": { nome: "MS Tecnologia", cor: "#9AA8BD" }
   };
   const TIPOS = {
     "brochure": ["Brochure", "Brochures"],
-    "post": ["Post de rede social", "Posts"],
-    "evento": ["Arte de evento", "Eventos"],
-    "parceria": ["Arte de parceria", "Parcerias"],
-    "curso": ["Arte de curso", "Cursos"],
-    "video": ["Vídeo", "Vídeos"],
-    "logo": ["Logo", "Logos"],
-    "apresentacao": ["Apresentação", "Apresentações"],
-    "case": ["Case de sucesso", "Cases"],
-    "proposta-modelo": ["Modelo de proposta", "Modelos de proposta"],
-    "institucional": ["Institucional", "Institucional"]
+    "post": ["Post", "Posts"],
+    "identidade": ["Identidade visual", "Identidade visual"]
   };
   const IDIOMAS = { pt: "Português", es: "Español", en: "English" };
-  const IMG = ["jpg", "jpeg", "png", "webp", "gif"];
+  const IMG = ["jpg", "jpeg", "png", "webp", "gif", "svg"];
   const VID = ["mp4", "mov", "webm", "m4v"];
 
   const $ = (s, el = document) => el.querySelector(s);
@@ -64,10 +56,22 @@
   const prodInfo = (p) => PRODUTOS[p] || { nome: p, cor: "#26B9DA" };
   const formatoItem = (it) => {
     const fs = [...new Set(it.arquivos.map((a) => a.formato.toUpperCase()))];
-    return fs.join(" e ");
+    return fs.length > 1 ? fs.slice(0, -1).join(", ") + " e " + fs[fs.length - 1] : fs[0];
   };
   const tamanhoItem = (it) => it.arquivos.reduce((s, a) => s + (a.tamanho || 0), 0);
-  const capaClara = (it) => it.tipo === "logo";
+  const capaClara = (it) => it.tipo === "identidade" && it.arquivos[0] && it.arquivos[0].formato !== "pdf";
+  const escuroArquivo = (nome) => /negativ|branc|fundo-escuro|avatar/i.test(nome) && !/fundo-branco/i.test(nome);
+
+  function rotuloArquivo(nome) {
+    const base = nome.replace(/\.[^.]+$/, "").replace(/^[^_]+_/, "");
+    const mapa = { "principal": "Principal", "estendida": "Estendida", "slogan": "Com slogan", "completa": "Completa",
+      "reduzida": "Reduzida", "avatar": "Avatar", "cor": "cor", "negativa": "negativa", "mono-preto": "mono preta",
+      "mono-branco": "mono branca", "mono-navy": "mono navy", "branca": "branca", "fundo-branco": "Fundo branco", "fundo-escuro": "Fundo escuro" };
+    const partes = base.split("_").map((p) => mapa[p] || p);
+    let r = partes.join(" ");
+    r = r.charAt(0).toUpperCase() + r.slice(1);
+    return r;
+  }
 
   /* Filtros */
   function contar(chave, valor) {
@@ -89,7 +93,7 @@
   }
 
   function montarProdutos() {
-    const presentes = Object.keys(PRODUTOS).filter((p) => itens.some((i) => i.produto === p));
+    const presentes = Object.keys(PRODUTOS).filter((p) => !PRODUTOS[p].oculto || itens.some((i) => i.produto === p));
     const opcoes = [["todos", "Todos", "#26B9DA"], ...presentes.map((p) => [p, PRODUTOS[p].nome, PRODUTOS[p].cor])];
     $("#produtos").innerHTML = opcoes.map(([v, n, c]) =>
       `<button class="prod" style="--cor:${c}" data-v="${v}" aria-pressed="${estado.produto === v}">${esc(n)}<small>${contar("produto", v)}</small></button>`
@@ -97,12 +101,12 @@
   }
 
   function montarChips(alvo, chave, mapa, rotuloTodos) {
-    const presentes = Object.keys(mapa).filter((k) => itens.some((i) => i[chave] === k));
+    const presentes = chave === "tipo" ? Object.keys(mapa) : Object.keys(mapa).filter((k) => itens.some((i) => i[chave] === k));
     if (chave === "idioma" && presentes.length < 2) { $(alvo).innerHTML = ""; return; }
-    const opcoes = [["todos", rotuloTodos], ...presentes.map((k) => [k, Array.isArray(mapa[k]) ? mapa[k][1] : mapa[k]])];
+    const opcoes = chave === "tipo"
+      ? presentes.map((k) => [k, mapa[k][1]])
+      : [["todos", rotuloTodos], ...presentes.map((k) => [k, Array.isArray(mapa[k]) ? mapa[k][1] : mapa[k]])];
     $(alvo).innerHTML = opcoes.map(([v, n]) => {
-      const qtd = contar(chave, v);
-      if (v !== "todos" && !qtd && estado[chave] !== v) return "";
       return `<button class="chip" data-chave="${chave}" data-v="${v}" aria-pressed="${estado[chave] === v}">${esc(n)}</button>`;
     }).join("");
   }
@@ -137,6 +141,9 @@
     const lista = itens.filter((i) => passa(i));
     $("#grade").innerHTML = lista.map(card).join("");
     $("#vazio").hidden = lista.length > 0;
+    $("#vazio p").textContent = estado.produto !== "todos" && !estado.q
+      ? `Ainda não há ${estado.tipo !== "todos" ? TIPOS[estado.tipo][1].toLowerCase() : "materiais"} de ${prodInfo(estado.produto).nome} por aqui.`
+      : "Nenhum material com esses filtros.";
     $("#contagem").textContent = lista.length === 1 ? "1 material" : `${lista.length} materiais`;
   }
 
@@ -207,9 +214,34 @@
       palco.innerHTML = `<video class="palco__video" src="${esc(a0.caminho)}" controls playsinline poster="${esc(it.capa || "")}"></video>`;
     } else {
       const varias = it.arquivos.length > 1;
-      palco.innerHTML = it.arquivos.map((a, k) => IMG.includes(a.formato)
-        ? `<img class="palco__img ${varias ? "palco__img--varias" : ""}" src="${esc(a.caminho)}" alt="${esc(it.titulo)}, arquivo ${k + 1}" loading="lazy">`
-        : "").join("");
+      if (it.tipo === "identidade" && varias) {
+        palco.className = "visor__palco visor__palco--claro";
+        const ordem = ["principal_cor", "cor", "principal_negativa", "branca", "principal_mono-preto", "mono-preto", "principal_mono-branco", "mono-branco",
+          "principal_mono-navy", "estendida_cor", "estendida_negativa", "slogan_cor", "completa_cor", "completa_negativa",
+          "reduzida_cor", "reduzida_mono-preto", "reduzida_mono-branco", "avatar", "fundo-branco", "fundo-escuro"];
+        const grupos = {};
+        it.arquivos.forEach((a) => {
+          const chave = a.nome.replace(/\.[^.]+$/, "");
+          (grupos[chave] = grupos[chave] || []).push(a);
+        });
+        const pos = (k) => { const v = k.replace(/^[^_]+_/, ""); const i = ordem.indexOf(v); return i < 0 ? 99 : i; };
+        const chaves = Object.keys(grupos).sort((x, y) => pos(x) - pos(y));
+        palco.innerHTML = `<div class="galeria">${chaves.map((k) => {
+          const fs = grupos[k].sort((x, y) => (x.formato === "svg") - (y.formato === "svg"));
+          const ver = fs.find((f) => f.formato !== "svg") || fs[0];
+          const rotulo = rotuloArquivo(ver.nome);
+          const fundo = ver.formato === "jpg" ? "galeria__item--foto" : (escuroArquivo(ver.nome) ? "galeria__item--escuro" : "");
+          return `<div class="galeria__item ${fundo}">
+            <span class="galeria__img"><img src="${esc(ver.caminho)}" alt="${esc(rotulo)}" loading="lazy"></span>
+            <span class="galeria__nome">${esc(rotulo)}</span>
+            <span class="galeria__baixar">${fs.map((f) => `<a href="${esc(f.caminho)}" download="${esc(f.nome)}">${ICO_BAIXAR}${f.formato.toUpperCase()}<small>${tam(f.tamanho)}</small></a>`).join("")}</span>
+          </div>`;
+        }).join("")}</div>`;
+      } else {
+        palco.innerHTML = it.arquivos.map((a, k) => IMG.includes(a.formato)
+          ? `<img class="palco__img ${varias ? "palco__img--varias" : ""}" src="${esc(a.caminho)}" alt="${esc(it.titulo)}, arquivo ${k + 1}" loading="lazy">`
+          : "").join("");
+      }
     }
 
     const dados = [
@@ -234,7 +266,7 @@
     }
     acoes += `<button class="btn btn--linha" data-link="${esc(it.id)}">Copiar link deste material</button>`;
 
-    const lista = !it.drive && it.arquivos.length > 1
+    const lista = !it.drive && it.arquivos.length > 1 && it.tipo !== "identidade"
       ? `<div><h4>Arquivos</h4><div class="info__arquivos">${it.arquivos.map((a) =>
           `<a href="${esc(a.caminho)}" download="${esc(a.nome)}">${esc(a.nome)}<span>${tam(a.tamanho)}</span></a>`).join("")}</div></div>`
       : "";
@@ -308,7 +340,7 @@
     const prod = t.closest(".prod");
     if (prod) { estado.produto = prod.dataset.v; render(); return; }
     const chip = t.closest(".chip");
-    if (chip) { estado[chip.dataset.chave] = chip.dataset.v; render(); return; }
+    if (chip) { const k = chip.dataset.chave, v = chip.dataset.v; estado[k] = (k === "tipo" && estado[k] === v) ? "todos" : v; render(); return; }
     const c = t.closest(".card, .hero__pilha figure");
     if (c) abrir(c.dataset.id);
   });
