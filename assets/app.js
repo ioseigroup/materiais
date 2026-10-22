@@ -24,6 +24,7 @@
 
   const $ = (s, el = document) => el.querySelector(s);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const semQuebra = (t) => esc(t).replace(/(I-[A-Z]+|Clari[A-Z.\-]+)/g, '<span style="white-space:nowrap">$1</span>');
   const tam = (b) => b > 1048576 ? (b / 1048576).toFixed(1).replace(".", ",") + " MB" : Math.max(1, Math.round(b / 1024)) + " KB";
   const norm = (s) => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const ICO_BAIXAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>';
@@ -126,7 +127,7 @@
         ${it.capa ? `<img src="${esc(it.capa)}" alt="" loading="lazy">` : ""}${qtd}
       </div>
       <div class="card__prod" style="--cor:${p.cor}"><i></i>${esc(p.nome)}, ${esc((TIPOS[it.tipo] || [it.tipo])[0].toLowerCase())}</div>
-      <h3>${esc(it.titulo)}</h3>
+      <h3>${semQuebra(it.titulo)}</h3>
       <div class="card__rodape">
         <span class="card__formato">${formatoItem(it)}, ${tam(tamanhoItem(it))}</span>
         ${rapido}
@@ -278,7 +279,7 @@
     info.innerHTML = `
       <div>
         <div class="card__prod" style="--cor:${p.cor}"><i></i>${esc(p.nome)}</div>
-        <h2 id="visor-titulo">${esc(it.titulo)}</h2>
+        <h2 id="visor-titulo">${semQuebra(it.titulo)}</h2>
       </div>
       ${it.descricao ? `<p class="info__desc">${esc(it.descricao)}</p>` : ""}
       <div class="info__acoes">${acoes}</div>

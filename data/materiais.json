@@ -889,6 +889,86 @@
   "dimensoes": "2400x1350"
  },
  {
+  "id": "manual-de-marca-i-rad",
+  "titulo": "Manual de marca I-RAD",
+  "produto": "i-rad",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/manual-de-marca-i-rad.jpg",
+  "arquivos": [
+   {
+    "nome": "manual-de-marca-i-rad.pdf",
+    "caminho": "arquivos/i-rad/manual-de-marca-i-rad.pdf",
+    "formato": "pdf",
+    "tamanho": 469075,
+    "capa": "capas/manual-de-marca-i-rad.jpg"
+   }
+  ],
+  "descricao": "Construção, área de proteção, versões, fundos, paleta, tipografia, elementos gráficos, usos incorretos e aplicações.",
+  "paginas": 11
+ },
+ {
+  "id": "manual-de-marca-i-print",
+  "titulo": "Manual de marca I-PRINT",
+  "produto": "i-print",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/manual-de-marca-i-print.jpg",
+  "arquivos": [
+   {
+    "nome": "manual-de-marca-i-print.pdf",
+    "caminho": "arquivos/i-print/manual-de-marca-i-print.pdf",
+    "formato": "pdf",
+    "tamanho": 357811,
+    "capa": "capas/manual-de-marca-i-print.jpg"
+   }
+  ],
+  "descricao": "Construção, área de proteção, versões, fundos, paleta, tipografia, elementos gráficos, usos incorretos e aplicações.",
+  "paginas": 11
+ },
+ {
+  "id": "manual-de-marca-i-ris",
+  "titulo": "Manual de marca I-RIS e I-PACS",
+  "produto": "i-ris",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/manual-de-marca-i-ris.jpg",
+  "arquivos": [
+   {
+    "nome": "manual-de-marca-i-ris.pdf",
+    "caminho": "arquivos/i-ris/manual-de-marca-i-ris.pdf",
+    "formato": "pdf",
+    "tamanho": 1073834,
+    "capa": "capas/manual-de-marca-i-ris.jpg"
+   }
+  ],
+  "descricao": "Manual único das duas marcas: construção, versões, fundos, paleta, tipografia, elementos, usos incorretos e aplicações.",
+  "paginas": 16
+ },
+ {
+  "id": "manual-de-marca-i-pacs",
+  "titulo": "Manual de marca I-RIS e I-PACS",
+  "produto": "i-pacs",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/manual-de-marca-i-pacs.jpg",
+  "arquivos": [
+   {
+    "nome": "manual-de-marca-i-pacs.pdf",
+    "caminho": "arquivos/i-pacs/manual-de-marca-i-pacs.pdf",
+    "formato": "pdf",
+    "tamanho": 1073834,
+    "capa": "capas/manual-de-marca-i-pacs.jpg"
+   }
+  ],
+  "descricao": "Manual único das duas marcas: construção, versões, fundos, paleta, tipografia, elementos, usos incorretos e aplicações.",
+  "paginas": 16
+ },
+ {
   "id": "carrossel-case-de-140-para-300-exames-de-rm-por-dia",
   "titulo": "Carrossel case: de 140 para 300 exames de RM por dia",
   "produto": "swiftmr",
