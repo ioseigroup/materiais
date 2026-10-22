@@ -5,3 +5,5 @@ Portal público com os materiais de marketing da IOSEI (brochures, posts, logos,
 Os materiais são cadastrados pelo marketing. Arquivos leves ficam aqui; arquivos pesados (PDF de gráfica, vídeos) ficam no Drive e o portal aponta para eles.
 
 Manutenção: `python3 tools/portal.py add|remove|list|size` (detalhes no topo do script).
+
+Pasta do Drive para arquivos pesados: https://drive.google.com/drive/folders/1yaUApTPEGyFXMgdc77y6eUH4zON666Fc

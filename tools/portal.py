@@ -20,6 +20,7 @@ DATA = os.path.join(ROOT, "data", "materiais.json")
 FILES = os.path.join(ROOT, "arquivos")
 THUMBS = os.path.join(ROOT, "capas")
 
+DRIVE_PASTA = "https://drive.google.com/drive/folders/1yaUApTPEGyFXMgdc77y6eUH4zON666Fc"  # MATERIAIS IOSEI, leitura publica
 LIMITE_SITE_MB = 1024          # teto do GitHub Pages
 ALERTA_SITE_MB = 750           # aviso antecipado
 MAX_ARQUIVO_MB = 45            # acima disso, vai para o Drive
