@@ -30,7 +30,7 @@
   const ICO_BAIXAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>';
 
   let itens = [];
-  const estado = { produto: "todos", tipo: "todos", idioma: "todos", q: "" };
+  const estado = { produto: "todos", tipo: "todos", idioma: "pt", q: "" };
 
   if (window.pdfjsLib) {
     pdfjsLib.GlobalWorkerOptions.workerSrc = "assets/lib/pdf.worker.min.js";
@@ -85,7 +85,7 @@
   function passa(it, e = estado) {
     if (e.produto !== "todos" && it.produto !== e.produto) return false;
     if (e.tipo !== "todos" && it.tipo !== e.tipo) return false;
-    if (e.idioma !== "todos" && it.idioma !== e.idioma) return false;
+    if (e.idioma !== "todos" && it.idioma !== e.idioma && it.idioma !== "neutro") return false;
     if (e.q) {
       const alvo = norm([it.titulo, prodInfo(it.produto).nome, (TIPOS[it.tipo] || [it.tipo])[0], it.evento, it.descricao, it.legenda].join(" "));
       if (!norm(e.q).split(/\s+/).every((w) => alvo.includes(w))) return false;
@@ -102,10 +102,11 @@
   }
 
   function montarChips(alvo, chave, mapa, rotuloTodos) {
-    const presentes = chave === "tipo" ? Object.keys(mapa) : Object.keys(mapa).filter((k) => itens.some((i) => i[chave] === k));
-    if (chave === "idioma" && presentes.length < 2) { $(alvo).innerHTML = ""; return; }
+    const presentes = Object.keys(mapa);
     const opcoes = chave === "tipo"
       ? presentes.map((k) => [k, mapa[k][1]])
+      : chave === "idioma"
+      ? presentes.map((k) => [k, mapa[k]])
       : [["todos", rotuloTodos], ...presentes.map((k) => [k, Array.isArray(mapa[k]) ? mapa[k][1] : mapa[k]])];
     $(alvo).innerHTML = opcoes.map(([v, n]) => {
       return `<button class="chip" data-chave="${chave}" data-v="${v}" aria-pressed="${estado[chave] === v}">${esc(n)}</button>`;
@@ -144,6 +145,8 @@
     $("#vazio").hidden = lista.length > 0;
     $("#vazio p").textContent = estado.produto !== "todos" && !estado.q
       ? `Ainda não há ${estado.tipo !== "todos" ? TIPOS[estado.tipo][1].toLowerCase() : "materiais"} de ${prodInfo(estado.produto).nome} por aqui.`
+      : estado.idioma !== "pt" && !estado.q
+      ? `Ainda não há materiais em ${IDIOMAS[estado.idioma].toLowerCase() === "english" ? "inglês" : "espanhol"} por aqui.`
       : "Nenhum material com esses filtros.";
     $("#contagem").textContent = lista.length === 1 ? "1 material" : `${lista.length} materiais`;
   }
@@ -252,7 +255,7 @@
       it.paginas ? ["Páginas", it.paginas] : null,
       it.dimensoes && it.arquivos.length === 1 ? ["Dimensões", it.dimensoes.replace("x", " x ") + " px"] : null,
       it.duracao ? ["Duração", `${Math.floor(it.duracao / 60)}:${String(it.duracao % 60).padStart(2, "0")}`] : null,
-      ["Idioma", IDIOMAS[it.idioma] || it.idioma],
+      it.idioma !== "neutro" ? ["Idioma", IDIOMAS[it.idioma] || it.idioma] : null,
       it.evento ? ["Evento", it.evento] : null,
       ["Atualizado em", new Date(it.data + "T12:00").toLocaleDateString("pt-BR")]
     ].filter(Boolean);
@@ -351,7 +354,7 @@
   });
   $("#busca").addEventListener("input", (e) => { estado.q = e.target.value.trim(); render(); });
   $("#limpar").addEventListener("click", () => {
-    Object.assign(estado, { produto: "todos", tipo: "todos", idioma: "todos", q: "" });
+    Object.assign(estado, { produto: "todos", tipo: "todos", idioma: "pt", q: "" });
     $("#busca").value = ""; render();
   });
   window.addEventListener("popstate", () => {
