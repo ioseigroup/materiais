@@ -969,6 +969,309 @@
   "paginas": 16
  },
  {
+  "id": "logos-swiftsight",
+  "titulo": "Logos SwiftSight",
+  "produto": "swiftsight",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-swiftsight-01.png",
+  "arquivos": [
+   {
+    "nome": "SwiftSight_principal_cor.png",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_cor.png",
+    "formato": "png",
+    "tamanho": 59039,
+    "capa": "capas/logos-swiftsight-01.png"
+   },
+   {
+    "nome": "SwiftSight_principal_mono-branco.png",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_mono-branco.png",
+    "formato": "png",
+    "tamanho": 45395,
+    "capa": "capas/logos-swiftsight-02.png"
+   },
+   {
+    "nome": "SwiftSight_principal_mono-preto.png",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_mono-preto.png",
+    "formato": "png",
+    "tamanho": 55211,
+    "capa": "capas/logos-swiftsight-03.png"
+   },
+   {
+    "nome": "SwiftSight_principal_negativa.png",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_negativa.png",
+    "formato": "png",
+    "tamanho": 54010,
+    "capa": "capas/logos-swiftsight-04.png"
+   },
+   {
+    "nome": "SwiftSight_fundo-branco.jpg",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 94250,
+    "capa": "capas/logos-swiftsight-05.jpg"
+   },
+   {
+    "nome": "SwiftSight_fundo-escuro.jpg",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 91190,
+    "capa": "capas/logos-swiftsight-06.jpg"
+   },
+   {
+    "nome": "SwiftSight_principal_cor.svg",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_cor.svg",
+    "formato": "svg",
+    "tamanho": 8060,
+    "capa": "capas/logos-swiftsight-07.png"
+   },
+   {
+    "nome": "SwiftSight_principal_mono-branco.svg",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_mono-branco.svg",
+    "formato": "svg",
+    "tamanho": 8060,
+    "capa": "capas/logos-swiftsight-08.png"
+   },
+   {
+    "nome": "SwiftSight_principal_mono-preto.svg",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_mono-preto.svg",
+    "formato": "svg",
+    "tamanho": 8060,
+    "capa": "capas/logos-swiftsight-09.png"
+   },
+   {
+    "nome": "SwiftSight_principal_negativa.svg",
+    "caminho": "arquivos/swiftsight/logos-swiftsight/SwiftSight_principal_negativa.svg",
+    "formato": "svg",
+    "tamanho": 8060,
+    "capa": "capas/logos-swiftsight-10.png"
+   }
+  ],
+  "descricao": "Construída sobre a arte oficial do SwiftMR, com Sight na mesma fonte e no mesmo azul do MR. SVG e PNG com fundo transparente (cor, negativa, monocromática preta e branca), mais JPEG com fundo branco e escuro.",
+  "dimensoes": "1200x250"
+ },
+ {
+  "id": "logos-clariace",
+  "titulo": "Logos ClariACE",
+  "produto": "claripi",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-clariace-01.png",
+  "arquivos": [
+   {
+    "nome": "ClariACE_cor.png",
+    "caminho": "arquivos/claripi/logos-clariace/ClariACE_cor.png",
+    "formato": "png",
+    "tamanho": 100595,
+    "capa": "capas/logos-clariace-01.png"
+   },
+   {
+    "nome": "ClariACE_branca.png",
+    "caminho": "arquivos/claripi/logos-clariace/ClariACE_branca.png",
+    "formato": "png",
+    "tamanho": 99261,
+    "capa": "capas/logos-clariace-02.png"
+   },
+   {
+    "nome": "ClariACE_mono-branco.png",
+    "caminho": "arquivos/claripi/logos-clariace/ClariACE_mono-branco.png",
+    "formato": "png",
+    "tamanho": 66179,
+    "capa": "capas/logos-clariace-03.png"
+   },
+   {
+    "nome": "ClariACE_mono-preto.png",
+    "caminho": "arquivos/claripi/logos-clariace/ClariACE_mono-preto.png",
+    "formato": "png",
+    "tamanho": 66179,
+    "capa": "capas/logos-clariace-04.png"
+   },
+   {
+    "nome": "ClariACE_fundo-branco.jpg",
+    "caminho": "arquivos/claripi/logos-clariace/ClariACE_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 89773,
+    "capa": "capas/logos-clariace-05.jpg"
+   },
+   {
+    "nome": "ClariACE_fundo-escuro.jpg",
+    "caminho": "arquivos/claripi/logos-clariace/ClariACE_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 91138,
+    "capa": "capas/logos-clariace-06.jpg"
+   }
+  ],
+  "descricao": "Clari da logo ClariPI com ACE no ciano da marca. PNG com fundo transparente (cor, branca, monocromática preta e branca) e JPEG com fundo branco e escuro.",
+  "dimensoes": "2400x1350"
+ },
+ {
+  "id": "logos-clarict-ai",
+  "titulo": "Logos ClariCT.AI",
+  "produto": "claripi",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-clarict-ai-01.png",
+  "arquivos": [
+   {
+    "nome": "ClariCT.AI_cor.png",
+    "caminho": "arquivos/claripi/logos-clarict-ai/ClariCT.AI_cor.png",
+    "formato": "png",
+    "tamanho": 90085,
+    "capa": "capas/logos-clarict-ai-01.png"
+   },
+   {
+    "nome": "ClariCT.AI_branca.png",
+    "caminho": "arquivos/claripi/logos-clarict-ai/ClariCT.AI_branca.png",
+    "formato": "png",
+    "tamanho": 88644,
+    "capa": "capas/logos-clarict-ai-02.png"
+   },
+   {
+    "nome": "ClariCT.AI_mono-branco.png",
+    "caminho": "arquivos/claripi/logos-clarict-ai/ClariCT.AI_mono-branco.png",
+    "formato": "png",
+    "tamanho": 59107,
+    "capa": "capas/logos-clarict-ai-03.png"
+   },
+   {
+    "nome": "ClariCT.AI_mono-preto.png",
+    "caminho": "arquivos/claripi/logos-clarict-ai/ClariCT.AI_mono-preto.png",
+    "formato": "png",
+    "tamanho": 59116,
+    "capa": "capas/logos-clarict-ai-04.png"
+   },
+   {
+    "nome": "ClariCT.AI_fundo-branco.jpg",
+    "caminho": "arquivos/claripi/logos-clarict-ai/ClariCT.AI_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 88170,
+    "capa": "capas/logos-clarict-ai-05.jpg"
+   },
+   {
+    "nome": "ClariCT.AI_fundo-escuro.jpg",
+    "caminho": "arquivos/claripi/logos-clarict-ai/ClariCT.AI_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 89705,
+    "capa": "capas/logos-clarict-ai-06.jpg"
+   }
+  ],
+  "descricao": "Clari da logo ClariPI com CT.AI no ciano da marca. PNG com fundo transparente (cor, branca, monocromática preta e branca) e JPEG com fundo branco e escuro.",
+  "dimensoes": "2400x1350"
+ },
+ {
+  "id": "logos-claripet-ct",
+  "titulo": "Logos ClariPET-CT",
+  "produto": "claripi",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-claripet-ct-01.png",
+  "arquivos": [
+   {
+    "nome": "ClariPET-CT_cor.png",
+    "caminho": "arquivos/claripi/logos-claripet-ct/ClariPET-CT_cor.png",
+    "formato": "png",
+    "tamanho": 69638,
+    "capa": "capas/logos-claripet-ct-01.png"
+   },
+   {
+    "nome": "ClariPET-CT_branca.png",
+    "caminho": "arquivos/claripi/logos-claripet-ct/ClariPET-CT_branca.png",
+    "formato": "png",
+    "tamanho": 68315,
+    "capa": "capas/logos-claripet-ct-02.png"
+   },
+   {
+    "nome": "ClariPET-CT_mono-branco.png",
+    "caminho": "arquivos/claripi/logos-claripet-ct/ClariPET-CT_mono-branco.png",
+    "formato": "png",
+    "tamanho": 46436,
+    "capa": "capas/logos-claripet-ct-03.png"
+   },
+   {
+    "nome": "ClariPET-CT_mono-preto.png",
+    "caminho": "arquivos/claripi/logos-claripet-ct/ClariPET-CT_mono-preto.png",
+    "formato": "png",
+    "tamanho": 46441,
+    "capa": "capas/logos-claripet-ct-04.png"
+   },
+   {
+    "nome": "ClariPET-CT_fundo-branco.jpg",
+    "caminho": "arquivos/claripi/logos-claripet-ct/ClariPET-CT_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 85859,
+    "capa": "capas/logos-claripet-ct-05.jpg"
+   },
+   {
+    "nome": "ClariPET-CT_fundo-escuro.jpg",
+    "caminho": "arquivos/claripi/logos-claripet-ct/ClariPET-CT_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 87056,
+    "capa": "capas/logos-claripet-ct-06.jpg"
+   }
+  ],
+  "descricao": "Clari da logo ClariPI com PET-CT no ciano da marca. PNG com fundo transparente (cor, branca, monocromática preta e branca) e JPEG com fundo branco e escuro.",
+  "dimensoes": "2400x1350"
+ },
+ {
+  "id": "logos-ms-tecnologia",
+  "titulo": "Logos MS Tecnologia",
+  "produto": "ms-tecnologia",
+  "tipo": "identidade",
+  "idioma": "pt",
+  "data": "2026-10-22",
+  "capa": "capas/logos-ms-tecnologia-01.png",
+  "arquivos": [
+   {
+    "nome": "MS-Tecnologia_cor.png",
+    "caminho": "arquivos/ms-tecnologia/logos-ms-tecnologia/MS-Tecnologia_cor.png",
+    "formato": "png",
+    "tamanho": 128180,
+    "capa": "capas/logos-ms-tecnologia-01.png"
+   },
+   {
+    "nome": "MS-Tecnologia_branca.png",
+    "caminho": "arquivos/ms-tecnologia/logos-ms-tecnologia/MS-Tecnologia_branca.png",
+    "formato": "png",
+    "tamanho": 81061,
+    "capa": "capas/logos-ms-tecnologia-02.png"
+   },
+   {
+    "nome": "MS-Tecnologia_mono-branco.png",
+    "caminho": "arquivos/ms-tecnologia/logos-ms-tecnologia/MS-Tecnologia_mono-branco.png",
+    "formato": "png",
+    "tamanho": 59348,
+    "capa": "capas/logos-ms-tecnologia-03.png"
+   },
+   {
+    "nome": "MS-Tecnologia_mono-preto.png",
+    "caminho": "arquivos/ms-tecnologia/logos-ms-tecnologia/MS-Tecnologia_mono-preto.png",
+    "formato": "png",
+    "tamanho": 59488,
+    "capa": "capas/logos-ms-tecnologia-04.png"
+   },
+   {
+    "nome": "MS-Tecnologia_fundo-branco.jpg",
+    "caminho": "arquivos/ms-tecnologia/logos-ms-tecnologia/MS-Tecnologia_fundo-branco.jpg",
+    "formato": "jpg",
+    "tamanho": 86567,
+    "capa": "capas/logos-ms-tecnologia-05.jpg"
+   },
+   {
+    "nome": "MS-Tecnologia_fundo-escuro.jpg",
+    "caminho": "arquivos/ms-tecnologia/logos-ms-tecnologia/MS-Tecnologia_fundo-escuro.jpg",
+    "formato": "jpg",
+    "tamanho": 87682,
+    "capa": "capas/logos-ms-tecnologia-06.jpg"
+   }
+  ],
+  "descricao": "PNG com fundo transparente (cor, branca, monocromática preta e branca) e JPEG com fundo branco e escuro. Arquivo extraído da brochure, em resolução média.",
+  "dimensoes": "2400x1350"
+ },
+ {
   "id": "carrossel-case-de-140-para-300-exames-de-rm-por-dia",
   "titulo": "Carrossel case: de 140 para 300 exames de RM por dia",
   "produto": "swiftmr",
