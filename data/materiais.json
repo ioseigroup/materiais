@@ -1,5 +1,65 @@
 [
  {
+  "id": "brochure-i-ris",
+  "titulo": "Brochure I-RIS",
+  "produto": "i-ris",
+  "tipo": "brochure",
+  "idioma": "pt",
+  "data": "2026-10-23",
+  "capa": "capas/brochure-i-ris.jpg",
+  "arquivos": [
+   {
+    "nome": "brochure-i-ris.pdf",
+    "caminho": "arquivos/i-ris/brochure-i-ris.pdf",
+    "formato": "pdf",
+    "tamanho": 1388469,
+    "capa": "capas/brochure-i-ris.jpg"
+   }
+  ],
+  "descricao": "Brochure do I-RIS Business OS, 8 páginas.",
+  "paginas": 8
+ },
+ {
+  "id": "apresentacao-comercial-i-ris",
+  "titulo": "Apresentação comercial I-RIS",
+  "produto": "i-ris",
+  "tipo": "apresentacao",
+  "idioma": "pt",
+  "data": "2026-10-23",
+  "capa": "capas/apresentacao-comercial-i-ris.jpg",
+  "arquivos": [
+   {
+    "nome": "apresentacao-comercial-i-ris.pdf",
+    "caminho": "arquivos/i-ris/apresentacao-comercial-i-ris.pdf",
+    "formato": "pdf",
+    "tamanho": 1974584,
+    "capa": "capas/apresentacao-comercial-i-ris.jpg"
+   }
+  ],
+  "descricao": "Apresentação comercial em 16:9, 14 slides.",
+  "paginas": 14
+ },
+ {
+  "id": "proposta-comercial-i-ris-modelo",
+  "titulo": "Proposta comercial I-RIS (modelo)",
+  "produto": "i-ris",
+  "tipo": "proposta",
+  "idioma": "pt",
+  "data": "2026-10-23",
+  "capa": "capas/proposta-comercial-i-ris-modelo.jpg",
+  "arquivos": [
+   {
+    "nome": "proposta-comercial-i-ris-modelo.pdf",
+    "caminho": "arquivos/i-ris/proposta-comercial-i-ris-modelo.pdf",
+    "formato": "pdf",
+    "tamanho": 1109837,
+    "capa": "capas/proposta-comercial-i-ris-modelo.jpg"
+   }
+  ],
+  "descricao": "Modelo para editar: preencher os campos entre colchetes (cliente, contato, CNPJ, cidade) e a data.",
+  "paginas": 11
+ },
+ {
   "id": "logos-iosei-global-operations",
   "titulo": "Logos IOSEI Global Operations",
   "produto": "iosei",
