@@ -60,6 +60,26 @@
   "paginas": 11
  },
  {
+  "id": "brochure-i-rad",
+  "titulo": "Brochure I-RAD",
+  "produto": "i-rad",
+  "tipo": "brochure",
+  "idioma": "pt",
+  "data": "2026-10-23",
+  "capa": "capas/brochure-i-rad.jpg",
+  "arquivos": [
+   {
+    "nome": "brochure-i-rad.pdf",
+    "caminho": "arquivos/i-rad/brochure-i-rad.pdf",
+    "formato": "pdf",
+    "tamanho": 1612602,
+    "capa": "capas/brochure-i-rad.jpg"
+   }
+  ],
+  "descricao": "Brochure I-RAD 2026, versão atualizada.",
+  "paginas": 10
+ },
+ {
   "id": "logos-iosei-global-operations",
   "titulo": "Logos IOSEI Global Operations",
   "produto": "iosei",
@@ -1601,25 +1621,6 @@
    }
   ],
   "paginas": 12
- },
- {
-  "id": "brochure-i-rad",
-  "titulo": "Brochure I-RAD",
-  "produto": "i-rad",
-  "tipo": "brochure",
-  "idioma": "pt",
-  "data": "2026-07-28",
-  "capa": "capas/brochure-i-rad.jpg",
-  "arquivos": [
-   {
-    "nome": "brochure-i-rad.pdf",
-    "caminho": "arquivos/i-rad/brochure-i-rad.pdf",
-    "formato": "pdf",
-    "tamanho": 3160460,
-    "capa": "capas/brochure-i-rad.jpg"
-   }
-  ],
-  "paginas": 10
  },
  {
   "id": "brochure-i-print-on-demand",
