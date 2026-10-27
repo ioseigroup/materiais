@@ -42,3 +42,11 @@
   .pc-cab .lang-sw button { padding: 7px 6px; }
   .pc-entrar, .pc-cta { padding: 9px 9px; }
 }
+/* seletor de idioma (inserido pelo script de tradução no fim do cabeçalho) */
+.pc-cab .lang-sw { display: inline-flex; border: 1px solid var(--pc-fio); border-radius: 8px; overflow: hidden; flex: none; }
+.pc-cab .lang-sw button { font: 600 .78rem "Source Sans 3", "Segoe UI", system-ui, sans-serif; letter-spacing: .02em; color: var(--pc-tinta2); background: transparent; border: 0; padding: 7px 10px; cursor: pointer; line-height: 1; }
+.pc-cab .lang-sw button + button { border-left: 1px solid var(--pc-fio); }
+.pc-cab .lang-sw button:hover { color: var(--pc-tinta); }
+.pc-cab .lang-sw button[aria-pressed=true] { background: var(--pc-acento); color: #04122b; }
+@media (max-width: 700px) { .pc-cab .lang-sw button { padding: 7px 8px; } }
+@media (max-width: 420px) { .pc-cab .lang-sw button { padding: 7px 6px; } }
