@@ -1,0 +1,44 @@
+/* Cabeçalho e rodapé do site IOSEI e seletor de idioma. */
+:root { --pv-fundo: #050816; --pv-tinta: #f1f6fd; --pv-tinta2: #a9b8d6; --pv-fio: rgba(180, 205, 255, 0.14); --pv-ciano: #26b9da; }
+html { scroll-behavior: smooth; }
+.pv-cab { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: rgba(5, 8, 22, 0.9); -webkit-backdrop-filter: blur(22px); backdrop-filter: blur(22px); border-bottom: 1px solid var(--pv-fio); margin-bottom: -73px; }
+.pv-cab__linha { max-width: 1336px; margin: 0 auto; padding: 14px clamp(18px, 4vw, 48px); display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 72px; box-sizing: border-box; }
+.pv-logo img { height: 40px; width: auto; display: block; }
+.pv-nav { display: flex; align-items: center; gap: 30px; font-size: 0.95rem; font-weight: 500; }
+.pv-nav a, .pv-nav button { color: var(--pv-tinta); text-decoration: none; background: none; border: 0; font: inherit; cursor: pointer; padding: 0; opacity: 0.92; }
+.pv-nav a:hover, .pv-nav button:hover { color: var(--pv-ciano); }
+.pv-sol { position: relative; }
+.pv-sol__caixa { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin-top: 0; padding: 22px 12px 12px; width: 660px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+.pv-sol__caixa::before { content: ""; position: absolute; inset: 12px 0 0; background: rgba(11, 20, 56, 0.96); border: 1px solid var(--pv-fio); border-radius: 18px; z-index: -1; }
+.pv-sol__caixa a { display: grid; gap: 3px; padding: 14px; border-radius: 12px; opacity: 1; }
+.pv-sol__caixa a:hover { background: rgba(255, 255, 255, 0.05); color: var(--pv-tinta); }
+.pv-sol__caixa strong { font-family: "Encode Sans Semi Expanded", sans-serif; font-weight: 600; font-size: 1.05rem; }
+.pv-sol__caixa b, .pv-movel b { color: var(--pv-ciano); font-weight: inherit; }
+.pv-sol__caixa span { font-size: 0.88rem; color: var(--pv-tinta2); }
+.pv-cab__fim { display: flex; align-items: center; gap: 12px; }
+.pv-cta { font-family: "Encode Sans Semi Expanded", sans-serif; font-weight: 600; font-size: 0.86rem; background: var(--pv-ciano); color: #04122b; padding: 11px 18px; border-radius: 12px; text-decoration: none; white-space: nowrap; }
+.pv-menu { display: none; width: 40px; height: 40px; background: none; border: 0; cursor: pointer; padding: 10px; }
+.pv-menu i { display: block; height: 2px; background: var(--pv-tinta); margin: 4px 0; border-radius: 2px; }
+.pv-movel { display: grid; gap: 14px; padding: 18px clamp(18px, 4vw, 48px) 22px; background: #0b1438; border-top: 1px solid var(--pv-fio); }
+.pv-movel a { color: var(--pv-tinta); text-decoration: none; }
+.pv-rodape { background: #050816; border-top: 1px solid var(--pv-fio); padding: 56px clamp(18px, 4vw, 48px) 40px; }
+.pv-rodape__grade { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+.pv-rodape__grade > div { display: grid; gap: 10px; align-content: start; font-size: 0.94rem; }
+.pv-rodape img { height: 48px; width: auto; }
+.pv-rodape strong { font-family: "Encode Sans Semi Expanded", sans-serif; font-size: 1.05rem; margin-top: 8px; }
+.pv-rodape p { margin: 0; color: var(--pv-tinta2); max-width: 30em; }
+.pv-rodape h4 { margin: 0 0 4px; font-family: "Encode Sans Semi Expanded", sans-serif; font-weight: 600; font-size: 0.9rem; color: var(--pv-ciano); }
+.pv-rodape a { color: var(--pv-tinta); opacity: 0.82; text-decoration: none; }
+.pv-rodape a:hover { color: var(--pv-ciano); }
+.pv-rodape__nota { max-width: 1240px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid var(--pv-fio); font-size: 0.8rem; }
+@media (max-width: 960px) {
+  .pv-nav, .pv-cta { display: none; }
+  .pv-menu { display: block; }
+  .pv-rodape__grade { grid-template-columns: 1fr; }
+}
+.lang-sw{display:inline-flex;border:1px solid var(--pv-fio);border-radius:8px;overflow:hidden;flex:none}
+.lang-sw button{font:600 .78rem "Source Sans 3","Segoe UI",system-ui,sans-serif;letter-spacing:.02em;color:var(--pv-tinta2);background:transparent;border:0;padding:7px 10px;cursor:pointer;line-height:1}
+.lang-sw button+button{border-left:1px solid var(--pv-fio)}
+.lang-sw button:hover{color:var(--pv-tinta)}
+.lang-sw button[aria-pressed=true]{background:var(--pv-ciano);color:#04122b}
+@media (max-width:700px){.lang-sw button{padding:7px 8px}}

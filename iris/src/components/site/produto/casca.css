@@ -1,0 +1,44 @@
+/* Casca dos sites próprios de produto (I-RAD, I-RIS, I-PACS): cabeçalho fixo e rodapé com contato.
+   Sem marca IOSEI. As cores vêm de --pc-fundo e --pc-acento, definidas por produto. */
+.pc { --pc-fundo: #0d1433; --pc-acento: #26b9da; --pc-tinta: #f1f6fd; --pc-tinta2: #b4c0da; --pc-fio: rgba(180, 205, 255, 0.16); background: #fff; }
+.pc-cab { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: color-mix(in srgb, var(--pc-fundo) 92%, transparent); -webkit-backdrop-filter: blur(22px); backdrop-filter: blur(22px); border-bottom: 1px solid var(--pc-fio); margin-bottom: -73px; }
+.pc-cab--fixo { margin-bottom: 0; }
+.pc-cab__linha { max-width: 1336px; margin: 0 auto; padding: 14px clamp(18px, 4vw, 48px); display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 72px; box-sizing: border-box; }
+.pc-logo img { height: 34px; width: auto; display: block; }
+.pc-cab__fim { display: flex; align-items: center; gap: 12px; }
+.pc-cta { font-family: "Encode Sans Semi Expanded", sans-serif; font-weight: 600; font-size: 0.86rem; background: var(--pc-acento); color: #04122b; padding: 11px 18px; border-radius: 10px; text-decoration: none; white-space: nowrap; }
+.pc-entrar { font-family: "Encode Sans Semi Expanded", sans-serif; font-weight: 600; font-size: 0.86rem; color: var(--pc-tinta); border: 1px solid var(--pc-fio); padding: 10px 16px; border-radius: 10px; text-decoration: none; white-space: nowrap; }
+.pc-entrar:hover { border-color: var(--pc-acento); color: var(--pc-acento); }
+.pc-cta__curto { display: none; }
+.pc-rodape { background: var(--pc-fundo); color: var(--pc-tinta); padding: clamp(64px, 8vw, 104px) clamp(18px, 4vw, 48px) 40px; font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; scroll-margin-top: 72px; }
+.pc-rodape__grade { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.pc-rodape__marca { display: grid; gap: 14px; align-content: start; }
+.pc-rodape__marca img { height: 44px; width: auto; }
+.pc-rodape__marca strong { font-family: "Encode Sans Semi Expanded", sans-serif; font-weight: 600; font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.25; max-width: 22em; }
+.pc-rodape__marca p { margin: 0; color: var(--pc-tinta2); max-width: 32em; line-height: 1.5; }
+.pc-contato { display: grid; gap: 0; border-top: 1px solid var(--pc-fio); }
+.pc-contato a, .pc-contato div { display: grid; gap: 2px; padding: 16px 0; border-bottom: 1px solid var(--pc-fio); color: var(--pc-tinta); text-decoration: none; }
+.pc-contato span { font-size: 0.86rem; color: var(--pc-tinta2); }
+.pc-contato b { font-family: "Encode Sans Semi Expanded", sans-serif; font-weight: 600; font-size: 1.05rem; }
+.pc-contato a:hover b { color: var(--pc-acento); }
+.pc-contato .pc-pendente b { color: var(--pc-tinta2); font-weight: 500; }
+.pc-rodape__nota { max-width: 1240px; margin: 48px auto 0; padding-top: 24px; border-top: 1px solid var(--pc-fio); font-size: 0.8rem; color: var(--pc-tinta2); }
+@media (max-width: 860px) {
+  .pc-rodape__grade { grid-template-columns: 1fr; }
+  .pc-logo img { height: 28px; }
+  .pc-cta { padding: 10px 14px; font-size: 0.8rem; }
+}
+@media (max-width: 560px) {
+  .pc-cta__longo { display: none; }
+  .pc-cta__curto { display: inline; }
+  .pc-cab__linha { gap: 10px; padding-inline: 14px; }
+  .pc-logo img { height: 24px; }
+  .pc-cab__fim { gap: 8px; }
+  .pc-entrar { padding: 9px 10px; font-size: 0.78rem; }
+}
+@media (max-width: 420px) {
+  .pc-logo img { height: 20px; }
+  .pc-cab__linha { gap: 8px; padding-inline: 12px; }
+  .pc-cab .lang-sw button { padding: 7px 6px; }
+  .pc-entrar, .pc-cta { padding: 9px 9px; }
+}
