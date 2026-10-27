@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import tcImg from "@/assets/TC3.jpg";
+import "@/iosei/iosei.css";
 import { Cena, type Momento } from "@/iosei/Cena";
 import { Botao, Ligacao, Surge, FundoVivo, Seta } from "@/iosei/pecas";
 import { MIDIA } from "@/iosei/midia";
