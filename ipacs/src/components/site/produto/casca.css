@@ -50,3 +50,4 @@
 .pc-cab .lang-sw button[aria-pressed=true] { background: var(--pc-acento); color: #04122b; }
 @media (max-width: 700px) { .pc-cab .lang-sw button { padding: 7px 8px; } }
 @media (max-width: 420px) { .pc-cab .lang-sw button { padding: 7px 6px; } }
+.pc-rodape p { text-align: left; hyphens: manual; }

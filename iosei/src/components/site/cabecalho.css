@@ -42,3 +42,5 @@ html { scroll-behavior: smooth; }
 .lang-sw button:hover{color:var(--pv-tinta)}
 .lang-sw button[aria-pressed=true]{background:var(--pv-ciano);color:#04122b}
 @media (max-width:700px){.lang-sw button{padding:7px 8px}}
+.pv-rodape p { text-align: left; }
+.pv-rodape p.pv-rodape__nota { max-width: 1240px; }
