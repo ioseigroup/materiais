@@ -14,5 +14,5 @@ export const PRODUTO: ConfigProduto = {
   nota: "As funcionalidades e os resultados podem variar de acordo com o equipamento, o protocolo utilizado e as características de cada operação.",
   fundo: "#0d1433",
   acento: "#26b9da",
-  cabecalhoFixo: true,
+  cabecalho: "pilula",
 };

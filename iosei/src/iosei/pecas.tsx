@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { EXTERNOS } from "@/site/destinos";
 import { Link } from "@tanstack/react-router";
 
 export const Seta = () => (
@@ -10,12 +11,15 @@ type BotaoProps = { para: string; busca?: Record<string, string>; vidro?: boolea
 export function Botao({ para, busca, vidro, seta = true, children }: BotaoProps) {
   const classe = "io-botao" + (vidro ? " io-botao--vidro" : "");
   const miolo = <>{children}{seta ? <Seta /> : null}</>;
+  const externo = EXTERNOS[para];
+  if (externo) return <a className={classe} href={externo}>{miolo}</a>;
   if (para.startsWith("#")) return <a className={classe} href={para}>{miolo}</a>;
   if (para.startsWith("http")) return <a className={classe} href={para} target="_blank" rel="noreferrer">{miolo}</a>;
   return <Link className={classe} to={para as any} search={busca as any}>{miolo}</Link>;
 }
 
 export function Ligacao({ para, children }: { para: string; children: ReactNode }) {
+  if (EXTERNOS[para]) return <a className="io-link" href={EXTERNOS[para]}>{children}<Seta /></a>;
   if (para.startsWith("http")) return <a className="io-link" href={para} target="_blank" rel="noreferrer">{children}<Seta /></a>;
   return <Link className="io-link" to={para as any}>{children}<Seta /></Link>;
 }

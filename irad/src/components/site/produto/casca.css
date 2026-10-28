@@ -51,3 +51,17 @@
 @media (max-width: 700px) { .pc-cab .lang-sw button { padding: 7px 8px; } }
 @media (max-width: 420px) { .pc-cab .lang-sw button { padding: 7px 6px; } }
 .pc-rodape p { text-align: left; hyphens: manual; }
+/* cabeçalho em pílula: flutua sobre a página, em vidro neutro (pouco azul) */
+.pc-cab--pilula { top: 14px; width: min(1180px, calc(100% - 28px)); margin: 14px auto -74px; border-radius: 999px; background: rgba(20, 22, 28, 0.34); border: 1px solid rgba(255, 255, 255, 0.16); border-bottom-color: rgba(255, 255, 255, 0.16); box-shadow: 0 18px 50px -24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.12); -webkit-backdrop-filter: blur(22px) saturate(160%); backdrop-filter: blur(22px) saturate(160%); }
+.pc-cab--pilula .pc-cab__linha { height: 60px; max-width: none; padding: 8px 9px 8px 26px; }
+.pc-cab--pilula .pc-cta, .pc-cab--pilula .pc-entrar { border-radius: 999px; }
+.pc-cab--pilula .pc-entrar { border-color: rgba(255, 255, 255, 0.22); }
+.pc-cab--pilula .lang-sw { border-radius: 999px; border-color: rgba(255, 255, 255, 0.2); }
+.pc--pilula .ir-cena { --ir-topo: 0px; }
+.pc--pilula .ir-cena__grade { padding-top: 96px; }
+@media (max-width: 860px) {
+  .pc-cab--pilula { top: 10px; width: calc(100% - 20px); margin: 10px auto -64px; }
+  .pc-cab--pilula .pc-cab__linha { height: 54px; padding: 6px 7px 6px 18px; }
+}
+.pc--pilula .ir-cena__camada { top: 84px; height: calc(100% - 84px); }
+@media (max-width: 860px) { .pc--pilula .ir-cena__camada { top: 70px; height: calc(100% - 70px); } }

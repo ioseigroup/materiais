@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Destino } from "@/components/site/comum/Destino";
 import { Seta, Surge, Perguntas } from "@/components/site/irad2/pecas";
 import "./iprint.css";
 
@@ -105,7 +106,7 @@ export function CorpoPrint() {
           <Surge>
             <h2 className="ir-h2" style={{ fontSize: "clamp(1.45rem, 2.4vw, 2rem)" }}>Da sala de exame à entrega, sem desperdício.</h2>
             <p className="ir-texto">Antes da impressão, o I-RAD mostra onde a sua ressonância perde tempo entre um exame e outro.</p>
-            <Link to={"/irad" as any} className="ir-link">Conhecer o I-RAD<Seta /></Link>
+            <Destino to="/irad" className="ir-link">Conhecer o I-RAD<Seta /></Destino>
           </Surge>
         </div>
       </section>

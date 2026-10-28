@@ -1,5 +1,5 @@
 import { useRef, useState, type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
+import { whatsapp } from "@/site/contato";
 import { Seta, Surge, Perguntas } from "@/components/site/irad2/pecas";
 import aceTroncoA from "@/assets/clari/ace_tronco_antes.jpg";
 import aceTroncoD from "@/assets/clari/ace_tronco_depois.jpg";
@@ -178,7 +178,7 @@ export function CorpoClari() {
         <div className="ir-faixa">
           <h2 className="ir-h1">Menos contraste, menos dose e mais pacientes, com o tomógrafo que você já tem.</h2>
           <p className="ir-lead">Converse com nossos especialistas e descubra o impacto real das soluções ClariPI na sua operação.</p>
-          <Link to={"/contato" as any} className="ir-botao">Falar com um especialista<Seta /></Link>
+          <a href={whatsapp("Olá! Acessei o site da IOSEI Group e gostaria de falar com um especialista sobre o ClariPI.")} target="_blank" rel="noreferrer" className="ir-botao">Falar com um especialista<Seta /></a>
         </div>
       </section>
     </>

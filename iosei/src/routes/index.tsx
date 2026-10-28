@@ -1,4 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Destino } from "@/components/site/comum/Destino";
+import { whatsapp } from "@/site/contato";
 import type { ReactNode } from "react";
 import tcImg from "@/assets/TC3.jpg";
 import "@/iosei/iosei.css";
@@ -123,7 +125,7 @@ function HomePage() {
           <p className="io-lead">Tecnologia, inteligência artificial e dados para acelerar exames, revelar gargalos, reduzir desperdícios e gerar mais valor com os equipamentos que sua instituição já possui.</p>
           <div className="io-acoes">
             <Botao para="#solucoes">Conhecer nossas soluções</Botao>
-            <Botao para="/contato" vidro seta={false}>Falar com um especialista</Botao>
+            <Botao para={whatsapp()} vidro seta={false}>Falar com um especialista</Botao>
           </div>
           <p className="io-nota">Operação em seis países: Brasil, Espanha, Portugal, Paraguai, Panamá e Estados Unidos.</p>
         </div>
@@ -181,10 +183,10 @@ function HomePage() {
           <h2 className="io-h2">Qual resultado sua instituição precisa alcançar?</h2>
           <div className="io-atalhos">
             {objetivos.map((o) => (
-              <Link key={o.to} to={o.to as any}>
+              <Destino key={o.to} to={o.to}>
                 <span>{o.text}</span>
                 <em>{o.cta}<Seta /></em>
-              </Link>
+              </Destino>
             ))}
           </div>
         </div>
@@ -214,7 +216,7 @@ function HomePage() {
             </Surge>
             <Surge className="io-trilho io-cascata">
               {solucoes.map((s) => (
-                <Link key={s.to} to={s.to as any}>
+                <Destino key={s.to} to={s.to}>
                   <h3>{s.h3}</h3>
                   <p>{s.text}</p>
                   <div className="io-trilho__fim">
@@ -222,7 +224,7 @@ function HomePage() {
                     <span>{s.area}</span>
                     <Seta />
                   </div>
-                </Link>
+                </Destino>
               ))}
             </Surge>
           </div>

@@ -1,5 +1,5 @@
 import { useRef, type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
+import { whatsapp } from "@/site/contato";
 import sala from "@/assets/clari/sala-tc.jpg";
 import logoClari from "@/assets/claripi-branco.png";
 import aceArcoA from "@/assets/clari/ace_arco_antes.jpg";
@@ -234,7 +234,7 @@ export function HeroClari({ alvoInicial }: { alvoInicial?: string }) {
     <div className="ir-vidro clc__vidro" key="fecho">
       <h2 className="ir-h2">Veja o impacto na sua operação.</h2>
       <p className="ir-texto">Avalie as três soluções com os seus equipamentos, os seus protocolos e os seus pacientes.</p>
-      <Link to={"/contato" as any} className="ir-botao">Falar com um especialista<Seta /></Link>
+      <a href={whatsapp("Olá! Acessei o site da IOSEI Group e gostaria de falar com um especialista sobre o ClariPI.")} target="_blank" rel="noreferrer" className="ir-botao">Falar com um especialista<Seta /></a>
     </div>,
   ];
 

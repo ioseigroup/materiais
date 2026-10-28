@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Destino } from "@/components/site/comum/Destino";
 import caseBrainMraBefore from "@/assets/case-brainmra-before.jpg";
 import caseBrainMraAfter from "@/assets/case-brainmra-after.jpg";
 import caseBrainT1Before from "@/assets/case-braint1-before.jpg";
@@ -144,7 +145,7 @@ export function CorpoSwift({ semComparador = false }: { semComparador?: boolean 
           <Surge>
             <h2 className="ir-h2" style={{ fontSize: "clamp(1.45rem, 2.4vw, 2rem)" }}>Você acelerou a aquisição. Agora descubra o que ainda limita o ciclo.</h2>
             <p className="ir-texto">Troca de pacientes, preparação, protocolos, atrasos e ociosidade também pesam no resultado. O I-RAD mostra onde a sua operação ainda perde tempo.</p>
-            <Link to={"/irad" as any} className="ir-link">Conhecer o I-RAD<Seta /></Link>
+            <Destino to="/irad" className="ir-link">Conhecer o I-RAD<Seta /></Destino>
           </Surge>
           <Surge>
             <h2 className="ir-h2" style={{ fontSize: "clamp(1.45rem, 2.4vw, 2rem)" }}>Quanto sua ressonância poderia produzir com exames mais rápidos?</h2>

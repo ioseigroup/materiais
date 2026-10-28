@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
+import { Destino } from "@/components/site/comum/Destino";
+import { whatsapp } from "@/site/contato";
 import logoIosei from "@/assets/logo-iosei.png";
 import "./cabecalho.css";
 
@@ -27,7 +29,7 @@ export function SiteHeader() {
             {aberto && (
               <div className="pv-sol__caixa">
                 {menu.map((m) => (
-                  <Link key={m.to} to={m.to as any} onClick={() => setAberto(false)}><strong>{m.nome}</strong><span>{m.frase}</span></Link>
+                  <Destino key={m.to} to={m.to as any} onClick={() => setAberto(false)}><strong>{m.nome}</strong><span>{m.frase}</span></Destino>
                 ))}
               </div>
             )}
@@ -37,13 +39,13 @@ export function SiteHeader() {
           <Link to={"/contato" as any}>Contato</Link>
         </nav>
         <div className="pv-cab__fim">
-          <Link to={"/contato" as any} className="pv-cta">Falar com um especialista</Link>
+          <a href={whatsapp()} target="_blank" rel="noreferrer" className="pv-cta">Falar com um especialista</a>
           <button type="button" className="pv-menu" aria-label="Menu" aria-expanded={movel} onClick={() => setMovel((v) => !v)}><i /><i /><i /></button>
         </div>
       </div>
       {movel && (
         <div className="pv-movel">
-          {menu.map((m) => <Link key={m.to} to={m.to as any} onClick={() => setMovel(false)}><strong>{m.nome}</strong></Link>)}
+          {menu.map((m) => <Destino key={m.to} to={m.to as any} onClick={() => setMovel(false)}><strong>{m.nome}</strong></Destino>)}
           <Link to={"/quem-somos" as any} onClick={() => setMovel(false)}>Quem Somos</Link>
           <Link to={"/contato" as any} onClick={() => setMovel(false)}>Contato</Link>
         </div>

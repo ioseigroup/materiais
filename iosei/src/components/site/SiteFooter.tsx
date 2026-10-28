@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Destino } from "@/components/site/comum/Destino";
 import logoIosei from "@/assets/logo-iosei.png";
 import "./cabecalho.css";
 
@@ -18,7 +19,7 @@ export function SiteFooter() {
           <Link to={"/claripi/clarict-ai" as any}>IA para tomografia</Link>
           <Link to={"/claripi/claripet-ct" as any}>IA para PET-CT</Link>
           <Link to={"/iprint" as any}>Impressão sob demanda</Link>
-          <Link to={"/irad" as any}>Inteligência operacional</Link>
+          <Destino to={"/irad" as any}>Inteligência operacional</Destino>
           <Link to={"/iris" as any}>Gestão de receita da radiologia</Link>
           <Link to={"/ipacs" as any}>Arquivo de imagens em nuvem</Link>
         </div>

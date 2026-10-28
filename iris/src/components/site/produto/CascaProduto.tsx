@@ -15,15 +15,17 @@ export type ConfigProduto = {
   acento: string;
   /** acesso de clientes à plataforma (ex.: login do I-RAD) */
   entrar?: { rotulo: string; href: string };
-  /** true quando a página já reserva espaço para o cabeçalho (ex.: I-RAD) */
+  /** "pilula": cabeçalho flutuante em vidro, mais estreito que a tela */
+  cabecalho?: "pilula";
+  /** true quando a página já reserva espaço para o cabeçalho */
   cabecalhoFixo?: boolean;
 };
 
 export function CascaProduto({ cfg, children }: { cfg: ConfigProduto; children: ReactNode }) {
   const cores = { "--pc-fundo": cfg.fundo, "--pc-acento": cfg.acento } as CSSProperties;
   return (
-    <div className="pc" style={cores}>
-      <header className={cfg.cabecalhoFixo ? "pc-cab pc-cab--fixo" : "pc-cab"}>
+    <div className={cfg.cabecalho === "pilula" ? "pc pc--pilula" : "pc"} style={cores}>
+      <header className={"pc-cab" + (cfg.cabecalho === "pilula" ? " pc-cab--pilula" : cfg.cabecalhoFixo ? " pc-cab--fixo" : "")}>
         <div className="pc-cab__linha">
           <a href="#topo" className="pc-logo" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
             <img src={cfg.logo} alt={cfg.logoAlt} />

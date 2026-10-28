@@ -1,0 +1,18 @@
+/* Página de contato do site IOSEI */
+.io-contato { padding-top: clamp(140px, 16vw, 200px); }
+.io-contato__grade { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+.io-contato__texto { display: grid; gap: 22px; align-content: start; }
+.io-contato__dados { display: grid; gap: 0; margin: 8px 0 0; border-top: 1px solid var(--fio); max-width: 30rem; }
+.io-contato__dados > div { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--fio); }
+.io-contato__dados dt { font-size: 0.86rem; color: var(--tinta-2); }
+.io-contato__dados dd { margin: 0; font-family: var(--io-titulo); font-weight: 600; font-size: 1.05rem; color: var(--tinta); }
+.io-contato__dados dd a { color: var(--acento); }
+.io-contato__painel { max-width: 100%; }
+.io-contato__painel .io-atalhos a span { display: grid; gap: 2px; color: var(--tinta-2); font-size: 0.94rem; }
+.io-contato__marca { font-family: var(--io-titulo); font-weight: 700; font-size: 1.05rem; color: var(--tinta); }
+.io-contato__marca b { color: var(--acento); font-weight: 700; }
+.io-contato__calc { display: grid; gap: 18px; justify-items: start; max-width: 52rem; }
+@media (max-width: 860px) {
+  .io-contato__grade { grid-template-columns: 1fr; }
+  .io-contato { padding-top: 120px; }
+}
